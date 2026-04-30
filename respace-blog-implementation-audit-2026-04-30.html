@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>reSpace Blog · Implementation Audit · April 30, 2026</title>
+<meta name="description" content="What is implemented in the reSpace blog series, what is missing on respace.co, and the prioritized punch list for the dev team. Internal audit for Katrina, Bob, and Jacob.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #1A1A2E; --coral: #E8604C; --sand: #F5EFE6; --sage: #7C9A7E;
+  --white: #FFFFFF; --body: #333; --muted: #888;
+  --display: 'Clash Display', 'DM Sans', system-ui, Arial, sans-serif;
+  --sans: 'DM Sans', system-ui, Arial, sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--sans); font-size: 16px; line-height: 1.65; color: var(--body); background: var(--white); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.nav { position: sticky; top: 0; z-index: 100; background: var(--navy); padding: 16px 28px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.08); gap: 16px; }
+.nav-logo { font-family: var(--display); font-weight: 700; font-size: 22px; letter-spacing: -0.02em; color: var(--white); text-decoration: none; }
+.nav-logo .re { color: var(--coral); }
+.nav-tag { font-family: var(--sans); font-size: 12px; color: rgba(255,255,255,0.6); letter-spacing: 0.12em; text-transform: uppercase; flex: 1; text-align: center; }
+.nav-back { font-family: var(--sans); font-size: 12px; color: rgba(255,255,255,0.7); letter-spacing: 0.04em; text-decoration: none; border: 1px solid rgba(255,255,255,0.18); padding: 8px 14px; border-radius: 4px; transition: all .15s; }
+.nav-back:hover { background: var(--coral); border-color: var(--coral); color: var(--white); }
+
+.hero { background: var(--navy); color: var(--white); padding: 80px 28px 64px; position: relative; overflow: hidden; }
+.hero-inner { max-width: 980px; margin: 0 auto; position: relative; z-index: 2; }
+.hero-eyebrow { font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--coral); margin-bottom: 18px; }
+.hero h1 { font-family: var(--display); font-weight: 700; font-size: clamp(34px, 5vw, 54px); line-height: 1; letter-spacing: -0.02em; margin-bottom: 22px; max-width: 880px; }
+.hero-sub { font-size: 18px; line-height: 1.55; color: rgba(255,255,255,0.82); max-width: 720px; margin-bottom: 28px; }
+.hero-meta { display: flex; gap: 28px; font-size: 13px; color: rgba(255,255,255,0.65); flex-wrap: wrap; }
+.hero-meta strong { color: var(--coral); display: block; font-weight: 600; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 4px; }
+.ghost { position: absolute; font-family: var(--display); font-weight: 700; color: var(--white); opacity: 0.045; font-size: clamp(220px, 36vw, 460px); line-height: 0.85; bottom: -60px; right: -40px; user-select: none; pointer-events: none; letter-spacing: -0.04em; }
+
+.container { max-width: 980px; margin: 0 auto; padding: 0 28px; }
+.section { padding: 56px 0; }
+.section-eyebrow { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--coral); margin-bottom: 8px; }
+h2.h-section { font-family: var(--display); font-weight: 700; font-size: clamp(26px, 3vw, 36px); line-height: 1.05; letter-spacing: -0.01em; color: var(--navy); margin-bottom: 14px; }
+h3.h-sub { font-family: var(--display); font-weight: 700; font-size: 22px; line-height: 1.2; color: var(--navy); margin: 28px 0 10px; letter-spacing: -0.01em; }
+.lead { font-size: 17px; color: var(--body); max-width: 760px; line-height: 1.6; }
+
+p.body { margin: 14px 0; max-width: 760px; }
+ul.body { margin: 14px 0 14px 22px; max-width: 760px; }
+ul.body li { margin-bottom: 8px; }
+
+.tldr { background: var(--sand); border-left: 4px solid var(--coral); padding: 22px 26px; margin: 24px 0 8px; max-width: 760px; border-radius: 0 6px 6px 0; }
+.tldr-label { font-family: var(--sans); font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--coral); margin-bottom: 10px; }
+.tldr ul { list-style: none; margin: 0; padding: 0; }
+.tldr li { padding: 8px 0 8px 20px; position: relative; font-size: 15px; line-height: 1.5; color: var(--navy); border-bottom: 1px solid rgba(26,26,46,0.08); }
+.tldr li:last-child { border-bottom: none; }
+.tldr li::before { content: ""; position: absolute; left: 0; top: 18px; width: 8px; height: 2px; background: var(--coral); }
+
+table.posts { width: 100%; border-collapse: collapse; margin: 24px 0; font-size: 14px; max-width: 100%; }
+table.posts th { background: var(--navy); color: var(--white); text-align: left; padding: 12px 14px; font-family: var(--sans); font-weight: 600; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; }
+table.posts td { padding: 12px 14px; border-bottom: 1px solid rgba(26,26,46,0.1); vertical-align: top; }
+table.posts td.num { font-family: var(--display); font-weight: 700; color: var(--coral); width: 40px; }
+table.posts code { font-family: 'SF Mono', Menlo, Consolas, monospace; font-size: 12px; color: var(--navy); background: var(--sand); padding: 2px 6px; border-radius: 3px; word-break: break-all; }
+
+code.inline { font-family: 'SF Mono', Menlo, Consolas, monospace; font-size: 13px; color: var(--navy); background: rgba(26,26,46,0.06); padding: 2px 6px; border-radius: 3px; }
+
+.feature-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 22px 0; max-width: 880px; }
+@media (max-width: 720px) { .feature-grid { grid-template-columns: 1fr; } }
+.feature-card { background: var(--sand); padding: 18px 20px; border-radius: 6px; }
+.feature-card h4 { font-family: var(--display); font-weight: 700; font-size: 15px; color: var(--navy); margin-bottom: 8px; letter-spacing: 0; }
+.feature-card ul { list-style: none; margin: 0; padding: 0; font-size: 14px; line-height: 1.55; }
+.feature-card li { padding: 4px 0 4px 18px; position: relative; color: var(--body); }
+.feature-card li::before { content: "✓"; position: absolute; left: 0; top: 4px; color: var(--sage); font-weight: 700; font-size: 13px; }
+.feature-card.miss li::before { content: "○"; color: var(--coral); }
+
+.actions-list { max-width: 820px; margin: 24px 0; }
+.action-item { display: grid; grid-template-columns: 56px 1fr; gap: 18px; padding: 20px 0; border-bottom: 1px solid rgba(26,26,46,0.1); }
+.action-item:last-child { border-bottom: none; }
+.action-num { font-family: var(--display); font-weight: 700; font-size: 32px; color: var(--coral); line-height: 1; letter-spacing: -0.02em; }
+.action-title { font-family: var(--display); font-weight: 700; font-size: 17px; color: var(--navy); margin-bottom: 6px; line-height: 1.25; }
+.action-body { font-size: 14.5px; color: var(--body); line-height: 1.55; }
+
+.callout { background: var(--navy); color: var(--white); padding: 32px 30px; border-radius: 8px; margin: 32px 0; max-width: 820px; position: relative; overflow: hidden; }
+.callout-eyebrow { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--coral); margin-bottom: 10px; }
+.callout h3 { font-family: var(--display); font-weight: 700; font-size: 22px; color: var(--white); margin-bottom: 10px; line-height: 1.2; letter-spacing: -0.01em; }
+.callout p { color: rgba(255,255,255,0.82); font-size: 15px; line-height: 1.55; }
+
+.disclaimer-bar { background: var(--sand); padding: 18px 28px; text-align: center; font-size: 12px; color: var(--muted); }
+
+.footer { background: var(--navy); color: rgba(255,255,255,0.7); padding: 48px 28px 28px; }
+.footer-inner { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 32px; }
+@media (max-width: 880px) { .footer-inner { grid-template-columns: 1fr; gap: 24px; } }
+.footer h4 { font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--coral); margin-bottom: 12px; }
+.footer a { color: rgba(255,255,255,0.65); text-decoration: none; display: block; font-size: 13px; padding: 3px 0; transition: color .15s; }
+.footer a:hover { color: var(--coral); }
+.footer-brand { font-family: var(--display); font-weight: 700; font-size: 22px; color: var(--white); margin-bottom: 8px; }
+.footer-brand .re { color: var(--coral); }
+.footer-bottom { max-width: 1100px; margin: 32px auto 0; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: 12px; color: rgba(255,255,255,0.5); }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a class="nav-logo" href="index.html"><span class="re">re</span>Space</a>
+  <span class="nav-tag">Internal · Implementation Audit</span>
+  <a class="nav-back" href="index.html">← Back to portal</a>
+</nav>
+
+<section class="hero">
+  <div class="ghost" aria-hidden="true">re</div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow">For Jacob, Bob, Katrina · April 30, 2026</div>
+    <h1>What is built. What is not. What Jacob can do.</h1>
+    <p class="hero-sub">A working note that pairs with the May 2026 blog series. Two sources audited side by side: this portal (the content side, ready to ship) and respace.co (the publishing side, not built yet).</p>
+    <div class="hero-meta">
+      <div><strong>From</strong>Rachael · Savvy Digital Co.</div>
+      <div><strong>For</strong>Katrina, Bob, Jacob</div>
+      <div><strong>Version</strong>v1.0 · April 30, 2026</div>
+      <div><strong>Pairs with</strong>Strategy PDF · Content Factory</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-eyebrow">TL;DR</div>
+    <h2 class="h-section">Three lines, then the detail</h2>
+    <div class="tldr">
+      <div class="tldr-label">Bottom line up front</div>
+      <ul>
+        <li>The 4 blog posts are fully built and production-ready in this portal. Schema, brand layer, FAQ, hero, phone CTAs, end-of-post conversion section, disclaimers, all live in the HTML files and validated against brand v1.5.</li>
+        <li>None of it is shipped to respace.co yet. Every canonical URL currently 404s back to the homepage SPA. There is no /blog index, no sitemap.xml, no robots.txt. Schema cannot fire because the pages do not exist on the live domain.</li>
+        <li>Jacob's job is the deploy plus the publishing infrastructure. Drop the HTML, build the index, ship the sitemap, run the Google Search Console protocol the portal already documents. The content half is done.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background: var(--sand);">
+  <div class="container">
+    <div class="section-eyebrow">Source 1 · The Savvy portal</div>
+    <h2 class="h-section">What is built (and ready to ship)</h2>
+    <p class="lead">The portal is respace-content-portal.vercel.app. Every post is a self-contained HTML file with inline CSS, font imports, JSON-LD schema in the head, brand assets, and conversion stack baked in.</p>
+
+    <h3 class="h-sub">The 4 posts</h3>
+    <table class="posts">
+      <thead>
+        <tr><th>#</th><th>Post</th><th>Schema</th><th>Words</th><th>Canonical slug</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="num">01</td><td>Realtor.com Just Featured a Seattle Startup…</td><td>NewsArticle · FAQPage · BreadcrumbList</td><td>1,360</td><td><code>/blog/in-the-news/realtor-com-features-respace-co-homeownership/</code></td></tr>
+        <tr><td class="num">02</td><td>Cohousing Promised to Solve the Housing Crisis. Here Is Why It Has Not.</td><td>Article · FAQPage · BreadcrumbList</td><td>1,408</td><td><code>/blog/homebuying-tips/cohousing-affordable-housing-crisis-co-homeownership/</code></td></tr>
+        <tr><td class="num">03</td><td>Co-Living Was a Workaround. America Wants Ownership.</td><td>Article · FAQPage · BreadcrumbList</td><td>1,355</td><td><code>/blog/homebuying-tips/co-living-vs-co-homeownership-seattle/</code></td></tr>
+        <tr><td class="num">04</td><td>How to Buy a House with Friends in 2026…</td><td>Article · HowTo · FAQPage · BreadcrumbList</td><td>1,721</td><td><code>/blog/homebuying-tips/how-to-buy-house-with-friends-llc-co-homeownership/</code></td></tr>
+      </tbody>
+    </table>
+
+    <h3 class="h-sub">Features implemented in each post</h3>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h4>SEO mechanics</h4>
+        <ul>
+          <li>JSON-LD in the head (Article, FAQPage, BreadcrumbList, HowTo on Post 04)</li>
+          <li>Canonical tags pointing at production URLs</li>
+          <li>OG and Twitter Card meta with og:image references</li>
+          <li>24 FAQ schema entries across the series</li>
+          <li>5 to 6 authoritative outbound links per post</li>
+          <li>Clean H1 / H2 / H3 hierarchy structured for AEO parsing</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <h4>Lead capture and conversion routing</h4>
+        <ul>
+          <li>4 phone CTAs per post (tel:206-222-6322)</li>
+          <li>End-of-post CTA section with primary plus secondary buttons</li>
+          <li>Inline routing to homepage funnel sections (#waitlist, #properties, #how)</li>
+          <li>Phone bar section and footer phone link on every post</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <h4>Trust signals</h4>
+        <ul>
+          <li>"Not an investment. Not a solicitation." disclaimer 4x per post</li>
+          <li>Outbound citations to authoritative sources (Realtor.com, Shelterforce, NPR, Bankrate, US News)</li>
+          <li>Brand compliance pass: zero em dashes, correct reSpace capitalization, "membership interest" not "deed", "co-homeownership" not banned terms</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <h4>Engagement layer</h4>
+        <ul>
+          <li>Hero with eyebrow → H1 → subhead → meta strip</li>
+          <li>Ghost "re" element on hero (matches homepage brand)</li>
+          <li>Reading time noted in body</li>
+          <li>TL;DR / callout box near top</li>
+          <li>Pullquote element mid-article</li>
+          <li>Visible FAQ section at the bottom (paired with schema)</li>
+          <li>Brand fonts (Clash Display + DM Sans) and colors (navy / coral / sand)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout">
+      <div class="callout-eyebrow">Beyond the posts</div>
+      <h3>The portal is the full delivery, not just 4 HTML files.</h3>
+      <p>Strategy PDF (17 pages with the AEO grading framework, GSC submission protocol, and Day 30 / 60 / 90 KPI plan), Content Factory XLSX (7 tabs with keywords, backlinks, FAQ schema, and the brand compliance scorecard), 4 email companions for each blog drop morning, 12 Mansu social post prompts, and the Bing Webmaster parallel submission step. Everything Mary, Jacob, and Mansu need to ship and track.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-eyebrow">Source 2 · respace.co</div>
+    <h2 class="h-section">What is live on the production site</h2>
+    <p class="lead">Direct inspection of respace.co on April 30, 2026. The state is clear, and worth being explicit about so the punch list lands right.</p>
+
+    <h3 class="h-sub">The blog itself does not exist yet</h3>
+    <ul class="body">
+      <li>respace.co/blog → SPA fallback to homepage. No /blog index page.</li>
+      <li>All 4 canonical post URLs from the portal → SPA fallback to homepage. The pages are not live.</li>
+      <li>Footer "Blog" link → points to respace.co/#waitlist. Placeholder.</li>
+      <li>respace.co/sitemap.xml → SPA fallback. No real sitemap.</li>
+      <li>respace.co/robots.txt → SPA fallback. No real robots.</li>
+      <li>Zero JSON-LD schema anywhere on respace.co (homepage included).</li>
+      <li>OG images not uploaded. The /og/*.jpg paths the posts reference will 404 when shared.</li>
+    </ul>
+
+    <h3 class="h-sub">What is live and useful for the blog when it ships</h3>
+    <ul class="body">
+      <li>Persona-routed waitlist form on the homepage with <code class="inline">data-persona-preset</code> deep links (buyer-solo, buyer-group, broker, homeowner, investor, qualifier, property-analysis). The blog posts can plug into this with smarter CTAs than they currently do.</li>
+      <li><code class="inline">rsTrack()</code> session telemetry that POSTs every pageview and CTA click to api.respace.co/track with a persistent localStorage session ID. If Jacob wires this into the blog template, every blog read becomes attributable to the session that later submits the waitlist.</li>
+      <li>The Grove subdomain (thegrovebyrespace.co) for property-specific deep links.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" style="background: var(--sand);">
+  <div class="container">
+    <div class="section-eyebrow">Combined picture</div>
+    <h2 class="h-section">What is implemented overall vs what is missing</h2>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h4>Live and ready to ship</h4>
+        <ul>
+          <li>Schema layer (NewsArticle, Article, FAQPage, BreadcrumbList, HowTo)</li>
+          <li>Canonical tags and OG / Twitter meta</li>
+          <li>FAQ entries (24 across series)</li>
+          <li>Phone CTAs (4 per post)</li>
+          <li>End-of-post CTA card</li>
+          <li>Disclaimers, hero, callout, pullquote</li>
+          <li>Brand compliance pass</li>
+          <li>Outbound authority links</li>
+          <li>Reading time</li>
+        </ul>
+      </div>
+      <div class="feature-card miss">
+        <h4>Missing on the content side</h4>
+        <ul>
+          <li>Author bio / byline block</li>
+          <li>Visible <code class="inline">&lt;time&gt;</code> published-date element</li>
+          <li>Visible breadcrumb UI (schema is there, UI is not)</li>
+          <li>Related-posts rail</li>
+          <li>Social share widgets</li>
+          <li>Mid-article inline CTA card</li>
+          <li>In-post newsletter / email opt-in</li>
+          <li>CTAs use generic anchors, not <code class="inline">data-persona-preset</code> deep links</li>
+        </ul>
+      </div>
+      <div class="feature-card miss">
+        <h4>Missing on the infrastructure side</h4>
+        <ul>
+          <li>/blog index page</li>
+          <li>Real sitemap.xml</li>
+          <li>Real robots.txt</li>
+          <li>OG images uploaded to /og/</li>
+          <li>rsTrack wired into blog template</li>
+          <li>GSC submission run (no posts to submit yet)</li>
+        </ul>
+      </div>
+      <div class="feature-card">
+        <h4>Already shipped on respace.co</h4>
+        <ul>
+          <li>Persona-routed waitlist form with data-persona-preset deep links</li>
+          <li>rsTrack session telemetry POSTing to api.respace.co/track</li>
+          <li>Property-specific subdomain (thegrovebyrespace.co)</li>
+          <li>Phone, calendar, and persona-driven funnel branches</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-eyebrow">For Jacob</div>
+    <h2 class="h-section">The punch list, ranked by ROI</h2>
+    <p class="lead">Eight items. Items 1 through 3 are the unblock. 4 through 6 are the standard publishing infrastructure. 7 and 8 are the optimization passes that compound over time.</p>
+
+    <div class="actions-list">
+      <div class="action-item">
+        <div class="action-num">01</div>
+        <div>
+          <div class="action-title">Drop the 4 HTML files at their canonical slugs</div>
+          <div class="action-body">Option A in the portal docs. Each file is self-contained — inline CSS, schema, fonts — so no template work required to get them live. Highest ROI move on the list. Once shipped, the schema fires, the OG cards work (after step 3), the FAQ snippets become eligible, and the canonical tags resolve.</div>
+        </div>
+      </div>
+      <div class="action-item">
+        <div class="action-num">02</div>
+        <div>
+          <div class="action-title">Stand up a real sitemap.xml and robots.txt</div>
+          <div class="action-body">Sitemap lists the 4 post URLs plus the homepage. Robots references the sitemap. Without these, search engines cannot discover the posts efficiently.</div>
+        </div>
+      </div>
+      <div class="action-item">
+        <div class="action-num">03</div>
+        <div>
+          <div class="action-title">Upload the 4 OG images to respace.co/og/</div>
+          <div class="action-body">Filenames: realtor-feature-respace.jpg, cohousing-affordability.jpg, co-living-vs-ownership.jpg, co-buying-friends.jpg. Every social share is broken until this is done.</div>
+        </div>
+      </div>
+      <div class="action-item">
+        <div class="action-num">04</div>
+        <div>
+          <div class="action-title">Build a /blog index page</div>
+          <div class="action-body">Lists the 4 posts with title, eyebrow, hero image, and excerpt. Repoint the footer "Blog" link (currently <code class="inline">#waitlist</code>) to <code class="inline">/blog</code>. This becomes the canonical landing for organic blog traffic.</div>
+        </div>
+      </div>
+      <div class="action-item">
+        <div class="action-num">05</div>
+        <div>
+          <div class="action-title">Run the GSC + Bing Webmaster protocol</div>
+          <div class="action-body">8-step protocol documented in this portal and the strategy PDF. About 4 minutes per post. Confirms each post is indexable, schema parses in Rich Results Test, and pushes the URLs into the priority crawl queue. Bing in parallel because Bing powers ChatGPT search.</div>
+        </div>
+      </div>
+      <div class="action-item">
+        <div class="action-num">06</div>
+        <div>
+          <div class="action-title">Wire rsTrack into the blog template</div>
+          <div class="action-body">Same telemetry the homepage uses. Blog pageviews and CTA clicks attribute to the same session that later submits the waitlist. This is what makes content ROI provable.</div>
+        </div>
+      </div>
+      <div class="action-item">
+        <div class="action-num">07</div>
+        <div>
+          <div class="action-title">Upgrade post CTAs to use data-persona-preset deep links</div>
+          <div class="action-body">Replace generic <code class="inline">#waitlist</code> anchors with the homepage's preset routing. Post 04 (buy with friends) → <code class="inline">data-persona-preset="buyer-group"</code>. Posts 02 and 03 → <code class="inline">buyer-solo</code> or <code class="inline">qualifier</code>. Post 01 → mixed. Routes blog readers straight into the right funnel branch.</div>
+        </div>
+      </div>
+      <div class="action-item">
+        <div class="action-num">08</div>
+        <div>
+          <div class="action-title">Add the missing UI layer to each post</div>
+          <div class="action-body">Visible breadcrumb trail (schema is already there), <code class="inline">&lt;time&gt;</code> published-date display, mid-article inline CTA card, related-posts rail at the bottom (link the other 3 posts), and a small social share row. Author byline can be "By the reSpace Team" until author pages are set up.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="disclaimer-bar">
+  Sources: live inspection of respace-content-portal.vercel.app (HTML of all 4 posts) and respace.co (homepage, /blog, /sitemap.xml, /robots.txt) on April 30, 2026.
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand"><span class="re">re</span>Space</div>
+      <div style="font-size: 14px; max-width: 300px; line-height: 1.5;">Co-homeownership for people who refuse to rent their whole lives. Own the neighborhood.</div>
+    </div>
+    <div>
+      <h4>Pairs with</h4>
+      <a href="index.html">Portal home</a>
+      <a href="respace-blog-strategy-2026-04-29.pdf" target="_blank">Strategy PDF</a>
+      <a href="respace-content-factory-2026-04-29.xlsx" download>Content Factory XLSX</a>
+      <a href="respace-mansu-social-prompts-2026-04-29.html" target="_blank">Mansu Prompts</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="mailto:rachael@thesavvydigitalco.com">rachael@thesavvydigitalco.com</a>
+      <a href="mailto:office@respace.co">office@reSpace.co</a>
+      <a href="tel:+12062226322">(206) 222-6322</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div>© 2026 reSpace · Internal handoff portal · Not for public distribution</div>
+    <div>Not an investment. Not a solicitation.</div>
+  </div>
+</footer>
+
+</body>
+</html>
