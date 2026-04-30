@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 627" width="1200" height="627">
+<defs>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700;800;900&amp;display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&amp;display=swap');
+.display { font-family: 'Clash Display', Inter, 'Helvetica Neue', 'Arial Black', Arial, sans-serif; font-weight: 700; }
+.sans { font-family: 'DM Sans', Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1200" height="627" fill="#1A1A2E"/>
+<text x="1170" y="758.55" text-anchor="end" class="display" font-size="877" fill="#FFFFFF" opacity="0.04" letter-spacing="-0.04em">re</text>
+
+<rect x="0" y="0" width="600" height="627" fill="#F5EFE6"/>
+<text x="60" y="100" class="sans" font-weight="600" font-size="20" fill="#E8604C" letter-spacing="0.18em">CO-LIVING</text>
+<text x="60" y="180" class="display" font-size="56" fill="#1A1A2E" letter-spacing="-0.02em">Lease.</text>
+<line x1="60" y1="220" x2="180" y2="220" stroke="#1A1A2E" stroke-width="3"/>
+<text x="60" y="290" class="sans" font-weight="500" font-size="24" fill="#1A1A2E">$2,395 monthly rent</text>
+<text x="60" y="330" class="sans" font-weight="500" font-size="24" fill="#1A1A2E">10 years · $287K paid</text>
+<text x="60" y="395" class="display" font-size="42" fill="#E8604C" letter-spacing="-0.02em">Equity built. Zero.</text>
+<text x="60" y="540" class="sans" font-weight="500" font-size="18" fill="#1A1A2E" opacity="0.6">Lease ends. You leave.</text>
+<text x="60" y="570" class="sans" font-weight="500" font-size="18" fill="#1A1A2E" opacity="0.6">No asset. No return.</text>
+<rect x="600" y="0" width="600" height="627" fill="#1A1A2E"/>
+<text x="660" y="100" class="sans" font-weight="600" font-size="20" fill="#E8604C" letter-spacing="0.18em">CO-HOMEOWNERSHIP</text>
+<text x="660" y="180" class="display" font-size="52" fill="#FFFFFF" letter-spacing="-0.02em">Membership</text>
+<text x="660" y="235" class="display" font-size="52" fill="#FFFFFF" letter-spacing="-0.02em">interest.</text>
+<line x1="660" y1="275" x2="780" y2="275" stroke="#E8604C" stroke-width="3"/>
+<text x="660" y="345" class="sans" font-weight="500" font-size="24" fill="#FFFFFF" opacity="0.88">$2,430 monthly all in</text>
+<text x="660" y="385" class="sans" font-weight="500" font-size="24" fill="#FFFFFF" opacity="0.88">10 years · building wealth</text>
+<text x="660" y="450" class="display" font-size="42" fill="#E8604C" letter-spacing="-0.02em">Equity. Yours.</text>
+<text x="660" y="540" class="sans" font-weight="500" font-size="18" fill="#FFFFFF" opacity="0.6">Sell with right of first refusal.</text>
+<text x="660" y="570" class="sans" font-weight="500" font-size="18" fill="#FFFFFF" opacity="0.6">Wealth stays with you.</text>
+<rect x="540" y="270" width="120" height="80" rx="40" fill="#E8604C"/>
+<text x="600" y="324" text-anchor="middle" class="display" font-size="36" fill="#FFFFFF">vs</text>
+
+</svg>

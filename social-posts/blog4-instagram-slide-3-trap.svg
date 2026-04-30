@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+<defs>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700;800;900&amp;display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&amp;display=swap');
+.display { font-family: 'Clash Display', Inter, 'Helvetica Neue', 'Arial Black', Arial, sans-serif; font-weight: 700; }
+.sans { font-family: 'DM Sans', Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1080" height="1350" fill="#1A1A2E"/>
+<text x="1050" y="1576.8" text-anchor="end" class="display" font-size="1512" fill="#FFFFFF" opacity="0.045" letter-spacing="-0.04em">re</text>
+
+<text x="80" y="220" class="sans" font-weight="600" font-size="30" fill="#E8604C" letter-spacing="0.18em">WHERE IT BREAKS</text>
+<text x="80" y="430" class="display" font-size="92" fill="#FFFFFF" letter-spacing="-0.02em">Where it</text>
+<text x="80" y="525" class="display" font-size="92" fill="#FFFFFF" letter-spacing="-0.02em">usually</text>
+<text x="80" y="620" class="display" font-size="92" fill="#E8604C" letter-spacing="-0.02em">breaks.</text>
+<line x1="80" y1="690" x2="260" y2="690" stroke="#E8604C" stroke-width="4"/>
+<text x="80" y="790" class="sans" font-weight="500" font-size="32" fill="#FFFFFF" opacity="0.88">Joint mortgages with no</text>
+<text x="80" y="833" class="sans" font-weight="500" font-size="32" fill="#FFFFFF" opacity="0.88">right of first refusal.</text>
+<text x="80" y="900" class="sans" font-weight="500" font-size="32" fill="#FFFFFF" opacity="0.88">LLCs the lender will not finance.</text>
+<text x="80" y="970" class="sans" font-weight="500" font-size="32" fill="#FFFFFF" opacity="0.88">Operating agreements no one wrote.</text>
+<text x="80" y="1090" class="sans" font-weight="700" font-size="34" fill="#E8604C">Friends end up in court.</text>
+
+</svg>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>reSpace · Social Post Gallery · April 30 to May 11, 2026</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #1A1A2E; --coral: #E8604C; --sand: #F5EFE6;
+  --white: #FFFFFF; --body: #333; --muted: #888;
+  --display: 'Clash Display', 'DM Sans', system-ui, Arial, sans-serif;
+  --sans: 'DM Sans', system-ui, Arial, sans-serif;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--sans); font-size: 16px; line-height: 1.6; color: var(--body); background: #fafafa; }
+
+.nav { position: sticky; top: 0; z-index: 100; background: var(--navy); padding: 14px 24px; display: flex; justify-content: space-between; align-items: center; }
+.nav-logo { font-family: var(--display); font-weight: 700; font-size: 20px; letter-spacing: -0.02em; color: var(--white); text-decoration: none; }
+.nav-logo .re { color: var(--coral); }
+.nav-back { font-family: var(--sans); font-size: 13px; color: rgba(255,255,255,0.85); text-decoration: none; }
+.nav-back:hover { color: var(--coral); }
+
+.hero { background: var(--navy); color: var(--white); padding: 56px 24px 48px; position: relative; overflow: hidden; }
+.hero-inner { max-width: 1200px; margin: 0 auto; position: relative; z-index: 2; }
+.hero-eyebrow { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--coral); margin-bottom: 12px; }
+.hero h1 { font-family: var(--display); font-weight: 700; font-size: clamp(28px, 4vw, 44px); line-height: 1.05; letter-spacing: -0.02em; margin-bottom: 14px; max-width: 800px; }
+.hero-sub { font-size: 15px; line-height: 1.6; color: rgba(255,255,255,0.82); max-width: 720px; }
+.ghost { position: absolute; font-family: var(--display); font-weight: 700; color: var(--white); opacity: 0.045; font-size: 320px; line-height: 0.85; bottom: -80px; right: -40px; user-select: none; pointer-events: none; letter-spacing: -0.04em; }
+
+.specs { background: var(--sand); padding: 22px 24px; }
+.specs-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+@media (max-width: 720px) { .specs-inner { grid-template-columns: 1fr 1fr; } }
+.spec { font-size: 12px; }
+.spec strong { display: block; color: var(--coral); font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; font-size: 10px; margin-bottom: 3px; }
+
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+.section { padding: 40px 0; }
+.section-eyebrow { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--coral); margin-bottom: 6px; }
+h2.h-section { font-family: var(--display); font-weight: 700; font-size: 28px; line-height: 1.05; color: var(--navy); margin-bottom: 6px; letter-spacing: -0.01em; }
+.section-sub { font-size: 14px; color: var(--muted); margin-bottom: 22px; }
+
+.post-block {
+  background: var(--white);
+  border-radius: 10px;
+  padding: 28px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 8px rgba(26,26,46,0.06);
+}
+.post-block-header {
+  display: flex; gap: 18px; align-items: flex-start;
+  padding-bottom: 18px; margin-bottom: 24px;
+  border-bottom: 1px solid #eee;
+}
+.post-block-num { font-family: var(--display); font-weight: 700; font-size: 44px; color: var(--coral); line-height: 0.9; letter-spacing: -0.02em; }
+.post-block-info h3 { font-family: var(--display); font-weight: 700; font-size: 22px; color: var(--navy); line-height: 1.15; letter-spacing: -0.01em; margin-bottom: 4px; }
+.post-block-info p { font-size: 13px; color: var(--muted); }
+
+.platform-row { margin-bottom: 28px; }
+.platform-label {
+  font-family: var(--sans); font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--coral); margin-bottom: 12px;
+  display: flex; align-items: center; gap: 12px;
+}
+.platform-label::after { content: ""; flex: 1; height: 1px; background: #eee; }
+
+.assets-grid { display: grid; gap: 14px; }
+.assets-grid.ig-carousel { grid-template-columns: repeat(5, 1fr); }
+.assets-grid.ig-single { grid-template-columns: repeat(2, minmax(0, 360px)); justify-content: start; }
+.assets-grid.ig-carousel-4 { grid-template-columns: repeat(4, 1fr); }
+.assets-grid.li { grid-template-columns: 1fr; max-width: 720px; }
+.assets-grid.fb { grid-template-columns: 1fr; max-width: 720px; }
+@media (max-width: 880px) {
+  .assets-grid.ig-carousel, .assets-grid.ig-carousel-4 { grid-template-columns: 1fr 1fr; }
+}
+
+.asset {
+  border: 1.5px solid #e8e0d4; border-radius: 8px;
+  overflow: hidden;
+  display: flex; flex-direction: column;
+  background: var(--white);
+  transition: transform .15s, box-shadow .15s;
+}
+.asset:hover { transform: translateY(-2px); box-shadow: 0 8px 18px rgba(26,26,46,0.12); }
+.asset-preview {
+  background: #f3eee5;
+  position: relative;
+  width: 100%;
+}
+.asset-preview img { width: 100%; height: auto; display: block; }
+.asset-meta {
+  padding: 10px 12px;
+  border-top: 1px solid #eee;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.asset-name { font-family: var(--sans); font-size: 12px; font-weight: 700; color: var(--navy); }
+.asset-actions { display: flex; gap: 6px; }
+.asset-actions a {
+  flex: 1;
+  text-align: center;
+  font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase;
+  text-decoration: none;
+  padding: 6px 8px;
+  border-radius: 4px;
+  transition: opacity .15s;
+}
+.asset-actions a.svg { background: var(--navy); color: var(--white); }
+.asset-actions a.png { background: var(--coral); color: var(--white); }
+.asset-actions a:hover { opacity: 0.85; }
+
+.aspect-ig { aspect-ratio: 1080 / 1350; }
+.aspect-li { aspect-ratio: 1200 / 627; }
+.aspect-fb { aspect-ratio: 1200 / 630; }
+
+.bp-callout { background: var(--sand); border-radius: 8px; padding: 18px 22px; margin: 14px 0 24px; font-size: 13px; line-height: 1.55; }
+.bp-callout strong { color: var(--navy); display: block; font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 6px; color: var(--coral); }
+
+.footer { background: var(--navy); color: rgba(255,255,255,0.72); padding: 30px 24px 20px; margin-top: 48px; font-size: 13px; }
+.footer-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 14px; }
+.footer-brand { font-family: var(--display); font-weight: 700; font-size: 20px; color: var(--white); margin-bottom: 4px; letter-spacing: -0.02em; }
+.footer-brand .re { color: var(--coral); }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo"><span class="re">re</span>Space</a>
+  <a href="../index.html" class="nav-back">← Back to portal</a>
+</nav>
+
+<header class="hero">
+  <div class="ghost" aria-hidden="true">re</div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Composition reference · 23 layouts · 4 blog drops</div>
+    <h1>Layout reference for Mansu.</h1>
+    <p class="hero-sub">These are <strong>composition mockups</strong>, not final assets. Each layout shows exact copy, hierarchy, color blocking, and platform spec for Mansu to render the final visual with full brand-font fidelity (Clash Display + DM Sans). Pair every layout with the matching prompt in the Mansu prompts doc.</p>
+  </div>
+</header>
+
+<div class="specs">
+  <div class="specs-inner">
+    <div class="spec"><strong>Instagram</strong>1080 × 1350 · 4:5 portrait · safe zones top/bottom 150px · body text 30px+</div>
+    <div class="spec"><strong>LinkedIn</strong>1200 × 627 link card · headline 56pt · body 22pt · high contrast</div>
+    <div class="spec"><strong>Facebook</strong>1200 × 630 image · headline 60pt+ · place text in left half</div>
+    <div class="spec"><strong>Asset format</strong>SVG (vector + brand fonts) · PNG (rasterized for Canva/Mansu)</div>
+  </div>
+</div>
+
+<!-- HOW TO USE -->
+<section class="section">
+  <div class="container">
+    <div class="section-eyebrow">How to use these</div>
+    <h2 class="h-section">Two formats. Pick your tool.</h2>
+    <div class="bp-callout">
+      <strong>How to use this gallery</strong>
+      These are <strong>composition mockups</strong>. Open the <strong>SVG</strong> in a browser to see brand fonts render properly (Clash Display + DM Sans load from the web). The <strong>PNG</strong> previews on this page show layout only — the brand fonts do not render in PNG export, so the typography looks generic. <strong>Do not publish the PNGs as-is.</strong> Use them as Mansu reference: hand Mansu the SVG plus the matching prompt from the Mansu prompts doc, and Mansu will produce the final, brand-perfect post.
+    </div>
+  </div>
+</section>
+
+<!-- BLOG 1 -->
+<section class="section">
+  <div class="container">
+    <div class="post-block">
+      <div class="post-block-header">
+        <div class="post-block-num">01</div>
+        <div class="post-block-info">
+          <h3>Realtor.com Just Featured a Seattle Startup Quietly Solving the Housing Crisis</h3>
+          <p>Publishes Thursday, April 30, 2026 · 8:00 AM PT · 7 social assets</p>
+        </div>
+      </div>
+
+      <div class="platform-row">
+        <div class="platform-label">Instagram · 5-slide carousel · 1080 × 1350</div>
+        <div class="assets-grid ig-carousel">
+          <div class="asset"><div class="asset-preview aspect-ig"><img src="blog1-instagram-slide-1-hook.png" alt="Slide 1"></div><div class="asset-meta"><div class="asset-name">01 · Hook</div><div class="asset-actions"><a class="svg" href="blog1-instagram-slide-1-hook.svg" download>SVG</a><a class="png" href="blog1-instagram-slide-1-hook.png" download>PNG</a></div></div></div>
+          <div class="asset"><div class="asset-preview aspect-ig"><img src="blog1-instagram-slide-2-problem.png" alt="Slide 2"></div><div class="asset-meta"><div class="asset-name">02 · Problem</div><div class="asset-actions"><a class="svg" href="blog1-instagram-slide-2-problem.svg" download>SVG</a><a class="png" href="blog1-instagram-slide-2-problem.png" download>PNG</a></div></div></div>
+          <div class="asset"><div class="asset-preview aspect-ig"><img src="blog1-instagram-slide-3-shift.png" alt="Slide 3"></div><div class="asset-meta"><div class="asset-name">03 · Shift</div><div class="asset-actions"><a class="svg" href="blog1-instagram-slide-3-shift.svg" download>SVG</a><a class="png" href="blog1-instagram-slide-3-shift.png" download>PNG</a></div></div></div>
+          <div class="asset"><div class="asset-preview aspect-ig"><img src="blog1-instagram-slide-4-number.png" alt="Slide 4"></div><div class="asset-meta"><div class="asset-name">04 · The Number</div><div class="asset-actions"><a class="svg" href="blog1-instagram-slide-4-number.svg" download>SVG</a><a class="png" href="blog1-instagram-slide-4-number.png" download>PNG</a></div></div></div>
+          <div class="asset"><div class="asset-preview aspect-ig"><img src="blog1-instagram-slide-5-cta.png" alt="Slide 5"></div><div class="asset-meta"><div class="asset-name">05 · CTA</div><div class="asset-actions"><a class="svg" href="blog1-instagram-slide-5-cta.svg" download>SVG</a><a class="png" href="blog1-instagram-slide-5-cta.png" download>PNG</a></div></div></div>
+        </div>
+      </div>
+
+      <div class="platform-row">
+        <div class="platform-label">LinkedIn · link card · 1200 × 627</div>
+        <div class="assets-grid li">
+          <div class="asset"><div class="asset-preview aspect-li"><img src="blog1-linkedin.png" alt="LinkedIn card"></div><div class="asset-meta"><div class="asset-name">LinkedIn link card</div><div class="asset-actions"><a class="svg" href="blog1-linkedin.svg" download>SVG</a><a class="png" href="blog1-linkedin.png" download>PNG</a></div></div></div>
+        </div>
+      </div>
+
+      <div class="platform-row">
+        <div class="platform-label">Facebook · 1200 × 630 · photo placeholder for Mansu</div>
+        <div class="assets-grid fb">
+          <div class="asset"><div class="asset-preview aspect-fb"><img src="blog1-facebook.png" alt="Facebook"></div><div class="asset-meta"><div class="asset-name">Facebook composition mockup</div><div class="asset-actions"><a class="svg" href="blog1-facebook.svg" download>SVG</a><a class="png" href="blog1-facebook.png" download>PNG</a></div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG 2 -->
+<section class="section">
+  <div class="container">
+    <div class="post-block">
+      <div class="post-block-header">
+        <div class="post-block-num">02</div>
+        <div class="post-block-info">
+          <h3>Why Cohousing Has Not Solved Affordability. And What Is Emerging Instead.</h3>
+          <p>Publishes Monday, May 4, 2026 · 8:00 AM PT · 3 social assets</p>
+        </div>
+      </div>
+
+      <div class="platform-row">
+        <div class="platform-label">Instagram · single stat post · 1080 × 1350</div>
+        <div class="assets-grid ig-single">
+          <div class="asset"><div class="asset-preview aspect-ig"><img src="blog2-instagram.png" alt="IG stat post"></div><div class="asset-meta"><div class="asset-name">Instagram stat post</div><div class="asset-actions"><a class="svg" href="blog2-instagram.svg" download>SVG</a><a class="png" href="blog2-instagram.png" download>PNG</a></div></div></div>
+        </div>
+      </div>
+
+      <div class="platform-row">
+        <div class="platform-label">LinkedIn · data viz · 1200 × 627</div>
+        <div class="assets-grid li">
+          <div class="asset"><div class="asset-preview aspect-li"><img src="blog2-linkedin.png" alt="LinkedIn"></div><div class="asset-meta"><div class="asset-name">LinkedIn data viz</div><div class="asset-actions"><a class="svg" href="blog2-linkedin.svg" download>SVG</a><a class="png" href="blog2-linkedin.png" download>PNG</a></div></div></div>
+        </div>
+      </div>
+
+      <div class="platform-row">
+        <div class="platform-label">Facebook · 1200 × 630 · twilight porch placeholder for Mansu</div>
+        <div class="assets-grid fb">
+          <div class="asset"><div class="asset-preview aspect-fb"><img src="blog2-facebook.png" alt="Facebook"></div><div class="asset-meta"><div class="asset-name">Facebook composition mockup</div><div class="asset-actions"><a class="svg" href="blog2-facebook.svg" download>SVG</a><a class="png" href="blog2-facebook.png" download>PNG</a></div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG 3 -->
+<section class="section">
+  <div class="container">
+    <div class="post-block">
+      <div class="post-block-header">
+        <div class="post-block-num">03</div>
+        <div class="post-block-info">
+          <h3>Co-Living Was a Workaround. America Wants Ownership.</h3>
+          <p>Publishes Thursday, May 7, 2026 · 8:00 AM PT · 6 social assets</p>
+        </div>
+      </div>
+
+      <div class="platform-row">
+        <div class="platform-label">Instagram · 4-slide carousel · 1080 × 1350</div>
+        <div class="assets-grid ig-carousel-4">
+          <div class="asset"><div class="asset-preview aspect-ig"><img src="blog3-instagram-slide-1-hook.png" alt="Slide 1"></div><div class="asset-meta"><div class="asset-name">01 · Hook</div><div class="asset-actions"><a class="svg" href="blog3-instagram-slide-1-hook.svg" download>SVG</a><a class="png" href="blog3-instagram-slide-1-hook.png" download>PNG</a></div></div></div>
+          <div class="asset"><div class="asset-preview aspect-ig"><img src="blog3-instagram-slide-2-lease.png" alt="Slide 2"></div><div class="asset-meta"><div class="asset-name">02 · The Lease</div><div class="asset-actions"><a class="svg" href="blog3-instagram-slide-2-lease.svg" download>SVG</a><a class="png" href="blog3-instagram-slide-2-lease.png" download>PNG</a></div></div></div>
+          <div class="asset"><div class="asset-preview aspect-ig"><img src="blog3-instagram-slide-3-shift.png" alt="Slide 3"></div><div class="asset-meta"><div class="asset-name">03 · Shift</div><div class="asset-actions"><a class="svg" href="blog3-instagram-slide-3-shift.svg" download>SVG</a><a class="png" href="blog3-instagram-slide-3-shift.png" download>PNG</a></div></div></div>
+          <div class="asset"><div class="asset-preview aspect-ig"><img src="blog3-instagram-slide-4-cta.png" alt="Slide 4"></div><div class="asset-meta"><div class="asset-name">04 · CTA</div><div class="asset-actions"><a class="svg" href="blog3-instagram-slide-4-cta.svg" download>SVG</a><a class="png" href="blog3-instagram-slide-4-cta.png" download>PNG</a></div></div></div>
+        </div>
+      </div>
+
+      <div class="platform-row">
+        <div class="platform-label">LinkedIn · comparison panel · 1200 × 627</div>
+        <div class="assets-grid li">
+          <div class="asset"><div class="asset-preview aspect-li"><img src="blog3-linkedin.png" alt="LinkedIn"></div><div class="asset-meta"><div class="asset-name">LinkedIn comparison</div><div class="asset-actions"><a class="svg" href="blog3-linkedin.svg" download>SVG</a><a class="png" href="blog3-linkedin.png" download>PNG</a></div></div></div>
+        </div>
+      </div>
+
+      <div class="platform-row">
+        <div class="platform-label">Facebook · 1200 × 630 · kitchen interior placeholder for Mansu</div>
+        <div class="assets-grid fb">
+          <div class="asset"><div class="asset-preview aspect-fb"><img src="blog3-facebook.png" alt="Facebook"></div><div class="asset-meta"><div class="asset-name">Facebook composition mockup</div><div class="asset-actions"><a class="svg" href="blog3-facebook.svg" download>SVG</a><a class="png" href="blog3-facebook.png" download>PNG</a></div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG 4 -->
+<section class="section">
+  <div class="container">
+    <div class="post-block">
+      <div class="post-block-header">
+        <div class="post-block-num">04</div>
+        <div class="post-block-info">
+          <h3>How to Buy a House with Friends in 2026 Without Wrecking the Friendship or the Mortgage.</h3>
+          <p>Publishes Monday, May 11, 2026 · 8:00 AM PT · 7 social assets</p>
+        </div>
+      </div>
+
+      <div class="platform-row">
+        <div class="platform-label">Instagram · 5-slide carousel · 1080 × 1350</div>
+        <div class="assets-grid ig-carousel">
+          <div class="asset"><div class="asset-preview aspect-ig"><img src="blog4-instagram-slide-1-hook.png" alt="Slide 1"></div><div class="asset-meta"><div class="asset-name">01 · Hook</div><div class="asset-actions"><a class="svg" href="blog4-instagram-slide-1-hook.svg" download>SVG</a><a class="png" href="blog4-instagram-slide-1-hook.png" download>PNG</a></div></div></div>
+          <div class="asset"><div class="asset-preview aspect-ig"><img src="blog4-instagram-slide-2-math.png" alt="Slide 2"></div><div class="asset-meta"><div class="asset-name">02 · Math</div><div class="asset-actions"><a class="svg" href="blog4-instagram-slide-2-math.svg" download>SVG</a><a class="png" href="blog4-instagram-slide-2-math.png" download>PNG</a></div></div></div>
+          <div class="asset"><div class="asset-preview aspect-ig"><img src="blog4-instagram-slide-3-trap.png" alt="Slide 3"></div><div class="asset-meta"><div class="asset-name">03 · Trap</div><div class="asset-actions"><a class="svg" href="blog4-instagram-slide-3-trap.svg" download>SVG</a><a class="png" href="blog4-instagram-slide-3-trap.png" download>PNG</a></div></div></div>
+          <div class="asset"><div class="asset-preview aspect-ig"><img src="blog4-instagram-slide-4-fix.png" alt="Slide 4"></div><div class="asset-meta"><div class="asset-name">04 · Fix</div><div class="asset-actions"><a class="svg" href="blog4-instagram-slide-4-fix.svg" download>SVG</a><a class="png" href="blog4-instagram-slide-4-fix.png" download>PNG</a></div></div></div>
+          <div class="asset"><div class="asset-preview aspect-ig"><img src="blog4-instagram-slide-5-cta.png" alt="Slide 5"></div><div class="asset-meta"><div class="asset-name">05 · CTA</div><div class="asset-actions"><a class="svg" href="blog4-instagram-slide-5-cta.svg" download>SVG</a><a class="png" href="blog4-instagram-slide-5-cta.png" download>PNG</a></div></div></div>
+        </div>
+      </div>
+
+      <div class="platform-row">
+        <div class="platform-label">LinkedIn · structure visual · 1200 × 627</div>
+        <div class="assets-grid li">
+          <div class="asset"><div class="asset-preview aspect-li"><img src="blog4-linkedin.png" alt="LinkedIn"></div><div class="asset-meta"><div class="asset-name">LinkedIn structure</div><div class="asset-actions"><a class="svg" href="blog4-linkedin.svg" download>SVG</a><a class="png" href="blog4-linkedin.png" download>PNG</a></div></div></div>
+        </div>
+      </div>
+
+      <div class="platform-row">
+        <div class="platform-label">Facebook · 1200 × 630 · friends-on-porch placeholder for Mansu</div>
+        <div class="assets-grid fb">
+          <div class="asset"><div class="asset-preview aspect-fb"><img src="blog4-facebook.png" alt="Facebook"></div><div class="asset-meta"><div class="asset-name">Facebook composition mockup</div><div class="asset-actions"><a class="svg" href="blog4-facebook.svg" download>SVG</a><a class="png" href="blog4-facebook.png" download>PNG</a></div></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand"><span class="re">re</span>Space</div>
+      <div>Social post gallery · 23 brand-compliant visuals · Built to platform best practices</div>
+    </div>
+    <div>
+      <div>Rachael Barclay · The Savvy Digital Co.</div>
+      <div>(206) 222-6322 · office@reSpace.co</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

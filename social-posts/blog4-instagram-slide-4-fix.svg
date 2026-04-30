@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+<defs>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700;800;900&amp;display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&amp;display=swap');
+.display { font-family: 'Clash Display', Inter, 'Helvetica Neue', 'Arial Black', Arial, sans-serif; font-weight: 700; }
+.sans { font-family: 'DM Sans', Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1080" height="1350" fill="#F5EFE6"/>
+
+<text x="80" y="220" class="sans" font-weight="600" font-size="30" fill="#E8604C" letter-spacing="0.18em">THE FIX</text>
+<text x="80" y="420" class="display" font-size="84" fill="#1A1A2E" letter-spacing="-0.02em">A single-purpose</text>
+<text x="80" y="510" class="display" font-size="84" fill="#E8604C" letter-spacing="-0.02em">LLC.</text>
+<line x1="80" y1="570" x2="260" y2="570" stroke="#E8604C" stroke-width="4"/>
+<text x="80" y="650" class="sans" font-weight="500" font-size="30" fill="#1A1A2E">The operating agreement defines:</text>
+<text x="80" y="720" class="sans" font-weight="700" font-size="28" fill="#1A1A2E">· Monthly contributions</text>
+<text x="80" y="765" class="sans" font-weight="700" font-size="28" fill="#1A1A2E">· Decision-making rules</text>
+<text x="80" y="810" class="sans" font-weight="700" font-size="28" fill="#1A1A2E">· Default cure</text>
+<text x="80" y="855" class="sans" font-weight="700" font-size="28" fill="#1A1A2E">· Right of first refusal</text>
+<text x="80" y="900" class="sans" font-weight="700" font-size="28" fill="#1A1A2E">· Valuation method on exit</text>
+<text x="80" y="990" class="sans" font-weight="700" font-size="32" fill="#1A1A2E">All written before closing.</text>
+<text x="80" y="1075" class="sans" font-weight="700" font-size="40" fill="#E8604C">We handle it.</text>
+
+</svg>

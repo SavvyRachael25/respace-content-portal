@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 627" width="1200" height="627">
+<defs>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700;800;900&amp;display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&amp;display=swap');
+.display { font-family: 'Clash Display', Inter, 'Helvetica Neue', 'Arial Black', Arial, sans-serif; font-weight: 700; }
+.sans { font-family: 'DM Sans', Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1200" height="627" fill="#1A1A2E"/>
+<text x="1170" y="758.55" text-anchor="end" class="display" font-size="877" fill="#FFFFFF" opacity="0.04" letter-spacing="-0.04em">re</text>
+
+<text x="80" y="100" class="sans" font-weight="600" font-size="22" fill="#E8604C" letter-spacing="0.18em">THE COHOUSING AFFORDABILITY GAP</text>
+<text x="80" y="180" class="display" font-size="56" fill="#FFFFFF" letter-spacing="-0.02em">The math the cohousing</text>
+<text x="80" y="240" class="display" font-size="56" fill="#FFFFFF" letter-spacing="-0.02em">movement is finally naming.</text>
+<rect x="240" y="430" width="180" height="120" fill="#1A1A2E" stroke="#FFFFFF" stroke-width="2"/>
+<text x="330" y="500" text-anchor="middle" class="display" font-size="38" fill="#FFFFFF">$213K</text>
+<text x="330" y="585" text-anchor="middle" class="sans" font-weight="500" font-size="20" fill="#FFFFFF" opacity="0.88">Tulsa median price</text>
+<rect x="600" y="220" width="180" height="330" fill="#E8604C"/>
+<text x="690" y="290" text-anchor="middle" class="display" font-size="42" fill="#FFFFFF">$350K+</text>
+<text x="690" y="585" text-anchor="middle" class="sans" font-weight="500" font-size="20" fill="#FFFFFF" opacity="0.88">Cheapest cohousing</text>
+<line x1="200" y1="555" x2="820" y2="555" stroke="#FFFFFF" stroke-width="1" opacity="0.3"/>
+<text x="900" y="280" class="display" font-size="46" fill="#FFFFFF" letter-spacing="-0.02em">The promise.</text>
+<text x="900" y="335" class="display" font-size="46" fill="#E8604C" letter-spacing="-0.02em">The math.</text>
+<line x1="900" y1="370" x2="1020" y2="370" stroke="#E8604C" stroke-width="3"/>
+<text x="900" y="425" class="sans" font-weight="500" font-size="20" fill="#FFFFFF" opacity="0.88">Cohousing has not</text>
+<text x="900" y="455" class="sans" font-weight="500" font-size="20" fill="#FFFFFF" opacity="0.88">scaled affordability.</text>
+<text x="900" y="490" class="sans" font-weight="700" font-size="20" fill="#FFFFFF">Co-homeownership</text>
+<text x="900" y="515" class="sans" font-weight="700" font-size="20" fill="#FFFFFF">is the upgrade.</text>
+<g>
+<text x="1010" y="600" class="display" font-size="32" fill="#E8604C" letter-spacing="-0.02em">re</text>
+<text x="1040" y="600" class="display" font-size="32" fill="#FFFFFF" letter-spacing="-0.02em">Space</text>
+</g>
+<text x="80" y="600" class="sans" font-weight="400" font-size="16" fill="#FFFFFF" opacity="0.5">Source: Shelterforce, March 2026 · respace.co</text>
+
+</svg>

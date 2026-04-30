@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+<defs>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700;800;900&amp;display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&amp;display=swap');
+.display { font-family: 'Clash Display', Inter, 'Helvetica Neue', 'Arial Black', Arial, sans-serif; font-weight: 700; }
+.sans { font-family: 'DM Sans', Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1080" height="1350" fill="#F5EFE6"/>
+
+<text x="80" y="220" class="sans" font-weight="600" font-size="30" fill="#E8604C" letter-spacing="0.18em">THE LEASE</text>
+<text x="540" y="620" text-anchor="middle" class="display" font-size="280" fill="#E8604C" letter-spacing="-0.04em">$287,000</text>
+<line x1="350" y1="690" x2="730" y2="690" stroke="#1A1A2E" stroke-width="3"/>
+<text x="540" y="790" text-anchor="middle" class="sans" font-weight="700" font-size="40" fill="#1A1A2E">10 years of one bedroom rent</text>
+<text x="540" y="845" text-anchor="middle" class="sans" font-weight="700" font-size="40" fill="#1A1A2E">in a major U.S. city.</text>
+<rect x="290" y="970" width="500" height="130" rx="8" fill="#1A1A2E"/>
+<text x="540" y="1025" text-anchor="middle" class="sans" font-weight="600" font-size="32" fill="#FFFFFF">Equity built</text>
+<text x="540" y="1075" text-anchor="middle" class="display" font-size="50" fill="#E8604C">Zero.</text>
+
+</svg>

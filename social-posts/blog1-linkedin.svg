@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 627" width="1200" height="627">
+<defs>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700;800;900&amp;display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&amp;display=swap');
+.display { font-family: 'Clash Display', Inter, 'Helvetica Neue', 'Arial Black', Arial, sans-serif; font-weight: 700; }
+.sans { font-family: 'DM Sans', Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1200" height="627" fill="#1A1A2E"/>
+<text x="1170" y="758.55" text-anchor="end" class="display" font-size="877" fill="#FFFFFF" opacity="0.04" letter-spacing="-0.04em">re</text>
+
+<rect x="0" y="0" width="600" height="627" fill="#F5EFE6"/>
+<text x="60" y="120" class="sans" font-weight="600" font-size="22" fill="#E8604C" letter-spacing="0.18em">IN THE NEWS · APR 30</text>
+<text x="60" y="220" class="display" font-size="62" fill="#1A1A2E" letter-spacing="-0.02em">Realtor.com</text>
+<text x="60" y="285" class="display" font-size="62" fill="#1A1A2E" letter-spacing="-0.02em">featured</text>
+<text x="60" y="350" class="display" font-size="62" fill="#E8604C" letter-spacing="-0.02em">reSpace.</text>
+<line x1="60" y1="400" x2="200" y2="400" stroke="#E8604C" stroke-width="3"/>
+<text x="60" y="455" class="sans" font-weight="500" font-size="22" fill="#1A1A2E">A Seattle startup quietly solving</text>
+<text x="60" y="490" class="sans" font-weight="500" font-size="22" fill="#1A1A2E">the housing affordability crisis.</text>
+<text x="60" y="580" class="sans" font-weight="700" font-size="20" fill="#1A1A2E">respace.co · (206) 222-6322</text>
+<text x="900" y="380" text-anchor="middle" class="display" font-size="280" fill="#FFFFFF" opacity="0.06" letter-spacing="-0.04em">re</text>
+<text x="780" y="200" class="display" font-size="44" fill="#FFFFFF" letter-spacing="-0.02em">Suites from</text>
+<text x="780" y="320" class="display" font-size="100" fill="#E8604C" letter-spacing="-0.04em">$124,500</text>
+<line x1="780" y1="360" x2="900" y2="360" stroke="#E8604C" stroke-width="3"/>
+<text x="780" y="410" class="sans" font-weight="500" font-size="22" fill="#FFFFFF" opacity="0.88">The Leschi Collection</text>
+<text x="780" y="445" class="sans" font-weight="500" font-size="22" fill="#FFFFFF" opacity="0.88">Open now</text>
+
+</svg>

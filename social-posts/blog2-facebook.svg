@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<defs>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700;800;900&amp;display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&amp;display=swap');
+.display { font-family: 'Clash Display', Inter, 'Helvetica Neue', 'Arial Black', Arial, sans-serif; font-weight: 700; }
+.sans { font-family: 'DM Sans', Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1200" height="630" fill="#1A1A2E"/>
+<text x="1170" y="762.3" text-anchor="end" class="display" font-size="882" fill="#FFFFFF" opacity="0.04" letter-spacing="-0.04em">re</text>
+
+<defs><linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#1a2a4a"/><stop offset="100%" stop-color="#0a1428"/></linearGradient></defs>
+<rect width="1200" height="630" fill="url(#g2)"/>
+<rect width="1200" height="630" fill="#1A1A2E" opacity="0.5"/>
+<text x="60" y="110" class="sans" font-weight="600" font-size="20" fill="#E8604C" letter-spacing="0.18em">[MANSU PHOTO PLACEHOLDER]</text>
+<text x="60" y="140" class="sans" font-weight="500" font-size="14" fill="#FFFFFF" opacity="0.7">Replace with twilight porch · Edison string lights · craftsman</text>
+<text x="60" y="280" class="display" font-size="62" fill="#FFFFFF" letter-spacing="-0.02em">If cohousing was</text>
+<text x="60" y="345" class="display" font-size="62" fill="#FFFFFF" letter-spacing="-0.02em">the dream,</text>
+<text x="60" y="425" class="display" font-size="62" fill="#E8604C" letter-spacing="-0.02em">this is the version</text>
+<text x="60" y="490" class="display" font-size="62" fill="#E8604C" letter-spacing="-0.02em">that finally works.</text>
+<line x1="60" y1="540" x2="200" y2="540" stroke="#E8604C" stroke-width="3"/>
+<text x="60" y="590" class="sans" font-weight="700" font-size="22" fill="#FFFFFF">The Leschi Collection · Open now · respace.co</text>
+<g>
+<text x="950" y="590" class="display" font-size="44" fill="#E8604C" letter-spacing="-0.02em">re</text>
+<text x="991" y="590" class="display" font-size="44" fill="#FFFFFF" letter-spacing="-0.02em">Space</text>
+</g>
+
+</svg>

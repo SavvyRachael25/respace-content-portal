@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 627" width="1200" height="627">
+<defs>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700;800;900&amp;display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&amp;display=swap');
+.display { font-family: 'Clash Display', Inter, 'Helvetica Neue', 'Arial Black', Arial, sans-serif; font-weight: 700; }
+.sans { font-family: 'DM Sans', Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1200" height="627" fill="#F5EFE6"/>
+<text x="1170" y="758.55" text-anchor="end" class="display" font-size="877" fill="#1A1A2E" opacity="0.04" letter-spacing="-0.04em">re</text>
+
+<rect x="0" y="0" width="1200" height="627" fill="#F5EFE6"/>
+<text x="80" y="90" class="sans" font-weight="600" font-size="22" fill="#E8604C" letter-spacing="0.18em">CO-BUYING WITH FRIENDS</text>
+<text x="80" y="160" class="display" font-size="56" fill="#1A1A2E" letter-spacing="-0.02em">Three structures.</text>
+<text x="80" y="220" class="display" font-size="56" fill="#E8604C" letter-spacing="-0.02em">One that actually works.</text>
+<line x1="80" y1="270" x2="200" y2="270" stroke="#E8604C" stroke-width="3"/>
+<rect x="80" y="340" width="320" height="200" rx="8" fill="#1A1A2E" opacity="0.08"/>
+<circle cx="240" cy="400" r="38" fill="#1A1A2E"/>
+<text x="240" y="414" text-anchor="middle" class="display" font-size="38" fill="#E8604C">$</text>
+<text x="240" y="478" text-anchor="middle" class="display" font-size="24" fill="#1A1A2E">Joint Mortgage</text>
+<text x="240" y="510" text-anchor="middle" class="sans" font-weight="500" font-size="18" fill="#1A1A2E" opacity="0.7">No exit. No structure.</text>
+<rect x="440" y="340" width="320" height="200" rx="8" fill="#1A1A2E" opacity="0.08"/>
+<circle cx="600" cy="400" r="38" fill="#1A1A2E"/>
+<text x="600" y="412" text-anchor="middle" class="display" font-size="32" fill="#E8604C">TIC</text>
+<text x="600" y="478" text-anchor="middle" class="display" font-size="24" fill="#1A1A2E">Tenancy in Common</text>
+<text x="600" y="510" text-anchor="middle" class="sans" font-weight="500" font-size="18" fill="#1A1A2E" opacity="0.7">Hard to finance. Hard to exit.</text>
+<rect x="800" y="340" width="320" height="200" rx="8" fill="#E8604C"/>
+<circle cx="960" cy="400" r="38" fill="#FFFFFF"/>
+<text x="960" y="414" text-anchor="middle" class="display" font-size="28" fill="#E8604C">LLC</text>
+<text x="960" y="478" text-anchor="middle" class="display" font-size="24" fill="#FFFFFF">Single-Purpose LLC</text>
+<text x="960" y="510" text-anchor="middle" class="sans" font-weight="700" font-size="18" fill="#FFFFFF">Built in. Financed. Exitable.</text>
+<text x="80" y="600" class="sans" font-weight="700" font-size="20" fill="#1A1A2E">respace.co · (206) 222-6322 · Not an investment. Not a solicitation.</text>
+<g>
+<text x="1010" y="90" class="display" font-size="32" fill="#E8604C" letter-spacing="-0.02em">re</text>
+<text x="1040" y="90" class="display" font-size="32" fill="#1A1A2E" letter-spacing="-0.02em">Space</text>
+</g>
+
+</svg>

@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>reSpace · Mansu Social Post Prompts · April 30 to May 11, 2026</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #1A1A2E; --coral: #E8604C; --sand: #F5EFE6; --sage: #7C9A7E;
+  --white: #FFFFFF; --body: #333; --muted: #888;
+  --display: 'Clash Display', 'DM Sans', system-ui, Arial, sans-serif;
+  --sans: 'DM Sans', system-ui, Arial, sans-serif;
+  --code: 'JetBrains Mono', 'Courier New', monospace;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--sans); font-size: 16px; line-height: 1.65; color: var(--body); background: var(--white); -webkit-font-smoothing: antialiased; }
+
+.nav { position: sticky; top: 0; z-index: 100; background: var(--navy); padding: 16px 28px; display: flex; justify-content: space-between; align-items: center; }
+.nav-logo { font-family: var(--display); font-weight: 700; font-size: 22px; letter-spacing: -0.02em; color: var(--white); text-decoration: none; }
+.nav-logo .re { color: var(--coral); }
+.nav-tag { font-family: var(--sans); font-size: 12px; color: rgba(255,255,255,0.6); letter-spacing: 0.12em; text-transform: uppercase; }
+
+.hero { background: var(--navy); color: var(--white); padding: 64px 28px 56px; position: relative; overflow: hidden; }
+.hero-inner { max-width: 980px; margin: 0 auto; position: relative; z-index: 2; }
+.hero-eyebrow { font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--coral); margin-bottom: 14px; }
+.hero h1 { font-family: var(--display); font-weight: 700; font-size: clamp(32px, 5vw, 52px); line-height: 1; letter-spacing: -0.02em; margin-bottom: 16px; max-width: 780px; }
+.hero-sub { font-size: 17px; line-height: 1.55; color: rgba(255,255,255,0.82); max-width: 720px; }
+.ghost { position: absolute; font-family: var(--display); font-weight: 700; color: var(--white); opacity: 0.045; font-size: 380px; line-height: 0.85; bottom: -90px; right: -40px; user-select: none; pointer-events: none; letter-spacing: -0.04em; }
+
+.container { max-width: 980px; margin: 0 auto; padding: 0 28px; }
+.section { padding: 48px 0; }
+.section-eyebrow { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--coral); margin-bottom: 8px; }
+h2.h-section { font-family: var(--display); font-weight: 700; font-size: clamp(24px, 3vw, 34px); line-height: 1.1; color: var(--navy); margin-bottom: 12px; letter-spacing: -0.01em; }
+.lead { font-size: 16px; color: var(--body); max-width: 720px; line-height: 1.6; }
+
+.brief { background: var(--sand); padding: 24px 28px; border-radius: 8px; margin: 24px 0 32px; }
+.brief h3 { font-family: var(--display); font-weight: 700; font-size: 18px; color: var(--navy); margin-bottom: 8px; letter-spacing: -0.01em; }
+.brief p { font-size: 14px; line-height: 1.55; margin-bottom: 8px; }
+.brief ul { margin: 0 0 0 18px; font-size: 14px; line-height: 1.65; }
+
+.blog-anchor {
+  background: var(--navy); color: var(--white); padding: 28px;
+  border-radius: 8px 8px 0 0;
+  margin-top: 48px;
+  position: relative; overflow: hidden;
+}
+.blog-anchor .ghost { font-size: 200px; bottom: -50px; right: -20px; opacity: 0.06; }
+.blog-anchor-eyebrow { font-family: var(--sans); font-size: 11px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--coral); margin-bottom: 8px; position: relative; z-index: 2; }
+.blog-anchor h3 { font-family: var(--display); font-weight: 700; font-size: 24px; line-height: 1.1; letter-spacing: -0.01em; color: var(--white); margin-bottom: 6px; position: relative; z-index: 2; }
+.blog-anchor-meta { font-size: 13px; color: rgba(255,255,255,0.7); position: relative; z-index: 2; }
+
+.prompt-card {
+  border: 2px solid var(--navy); border-top: none;
+  padding: 0;
+  margin-bottom: 24px;
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
+}
+.prompt-card.with-anchor { margin-top: 0; }
+.prompt-platform-bar {
+  background: var(--coral); color: var(--white);
+  padding: 14px 22px;
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 10px;
+}
+.prompt-platform-bar .platform { font-family: var(--display); font-weight: 700; font-size: 18px; letter-spacing: -0.01em; }
+.prompt-platform-bar .schedule { font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.95; }
+.prompt-body { padding: 24px 28px; }
+.prompt-body h4 { font-family: var(--sans); font-size: 11px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--coral); margin: 18px 0 6px; }
+.prompt-body h4:first-child { margin-top: 0; }
+.prompt-body p { font-size: 14px; line-height: 1.55; margin-bottom: 6px; }
+.prompt-body .copyable {
+  background: var(--sand); border-left: 3px solid var(--coral);
+  padding: 16px 20px; border-radius: 4px;
+  margin: 8px 0;
+  font-size: 14px; line-height: 1.65;
+  white-space: pre-wrap;
+}
+.prompt-body .copyable.code {
+  background: var(--navy); color: rgba(255,255,255,0.92);
+  border-left-color: var(--coral);
+  font-family: var(--code), monospace;
+  font-size: 13px;
+  white-space: pre-wrap;
+}
+.prompt-body .copy-btn {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--navy); color: var(--white);
+  border: none; padding: 6px 14px; border-radius: 3px;
+  font-family: var(--sans); font-size: 12px; font-weight: 600;
+  cursor: pointer; transition: opacity .15s;
+  margin-top: 8px;
+}
+.prompt-body .copy-btn:hover { opacity: 0.85; }
+.prompt-meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 14px 0 0; padding-top: 14px; border-top: 1px solid #eee; }
+@media (max-width: 720px) { .prompt-meta { grid-template-columns: 1fr 1fr; } }
+.prompt-meta div { font-size: 12px; }
+.prompt-meta strong { display: block; color: var(--coral); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; font-size: 10px; margin-bottom: 2px; }
+
+.brand-block { background: var(--sand); padding: 28px; border-radius: 8px; margin: 32px 0; }
+.brand-block h3 { font-family: var(--display); font-weight: 700; font-size: 22px; color: var(--navy); margin-bottom: 12px; letter-spacing: -0.01em; }
+.brand-block ul { margin: 0 0 0 18px; font-size: 14px; line-height: 1.7; }
+.brand-block strong { color: var(--navy); }
+
+.footer { background: var(--navy); color: rgba(255,255,255,0.72); padding: 36px 28px 24px; margin-top: 48px; }
+.footer-inner { max-width: 980px; margin: 0 auto; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; font-size: 13px; }
+.footer-brand { font-family: var(--display); font-weight: 700; font-size: 22px; color: var(--white); margin-bottom: 6px; letter-spacing: -0.02em; }
+.footer-brand .re { color: var(--coral); }
+
+.toc { background: var(--sand); padding: 22px 26px; border-radius: 8px; margin: 24px 0; }
+.toc h3 { font-family: var(--display); font-weight: 700; font-size: 16px; color: var(--navy); margin-bottom: 10px; letter-spacing: -0.01em; }
+.toc a { display: block; color: var(--navy); text-decoration: none; padding: 5px 0; border-bottom: 1px dotted #ccc; font-size: 14px; }
+.toc a:hover { color: var(--coral); }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-logo"><span class="re">re</span>Space</a>
+  <div class="nav-tag">Mansu Social Post Prompts · For Internal Use</div>
+</nav>
+
+<header class="hero">
+  <div class="ghost" aria-hidden="true">re</div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow">12 prompts · 3 platforms · 4 blog drops · April 30 to May 11, 2026</div>
+    <h1>Mansu social post prompts.</h1>
+    <p class="hero-sub">Twelve copy-paste-ready prompts. Three per blog post (LinkedIn, Instagram, Facebook). Each one includes the brand voice rules, the visual direction, the final caption, and the hashtags. Mansu just runs them.</p>
+  </div>
+</header>
+
+<!-- BRAND BLOCK -->
+<section class="section" style="padding-top: 32px;">
+  <div class="container">
+
+    <div class="brand-block">
+      <h3>Read this once before running any prompt</h3>
+      <p style="font-size: 14px; line-height: 1.65; margin-bottom: 12px;">Every Mansu prompt below assumes the brand rules in this block. If Mansu is generating an image, paste this brand block into the prompt before the post-specific direction.</p>
+      <ul>
+        <li><strong>Brand colors only:</strong> Midnight Navy <code>#1A1A2E</code>, reSpace Coral <code>#E8604C</code>, Warm Sand <code>#F5EFE6</code>, Pure White <code>#FFFFFF</code>. Coral is accent only, never a large background.</li>
+        <li><strong>Typography:</strong> Headlines in Clash Display Bold or ExtraBold. Body in DM Sans Regular or Medium. No other typefaces.</li>
+        <li><strong>Logo:</strong> &quot;re&quot; in coral, &quot;Space&quot; in navy on light or white on dark. Never recolored.</li>
+        <li><strong>Photography style keywords (append to every image prompt):</strong> warm amber tones, golden hour lighting, architectural photography, shot on 35mm film, no text overlays, no watermarks.</li>
+        <li><strong>People in images:</strong> 2 to 3 mixed-ethnicity friends, late 20s to early 30s, casual-professional wardrobe, candid joy. Never posed. Never looking at camera.</li>
+        <li><strong>Voice:</strong> confident, irreverent, warm. No hedging. No corporate phrasing. Short punchy sentences.</li>
+        <li><strong>NO em dashes anywhere.</strong> Use periods, commas, or colons instead.</li>
+        <li><strong>Banned terms:</strong> never use co-living, deeded equity, ROI, returns, passive income, investment opportunity, or zero down to describe reSpace itself. Co-living and cohousing are only used in comparison or FAQ contexts.</li>
+        <li><strong>Required terms:</strong> co-homeownership (self-description), membership interest (not deed), wet bar (not kitchen for suite), Assessment Fee (not Clarity Fee).</li>
+        <li><strong>Phone number:</strong> (206) 222-6322 · email office@reSpace.co · website respace.co</li>
+        <li><strong>Disclaimer required:</strong> add &quot;Not an investment. Not a solicitation.&quot; in the first comment of every post.</li>
+      </ul>
+    </div>
+
+    <div class="toc">
+      <h3>Contents</h3>
+      <a href="#blog1">Blog 1 · Realtor.com Featured · Thursday, April 30</a>
+      <a href="#blog2">Blog 2 · Cohousing Paradox · Monday, May 4</a>
+      <a href="#blog3">Blog 3 · Co-Living vs Ownership · Thursday, May 7</a>
+      <a href="#blog4">Blog 4 · Co-Buying with Friends · Monday, May 11</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- BLOG 1 -->
+<section class="section" id="blog1" style="padding-top: 0;">
+  <div class="container">
+
+    <div class="blog-anchor">
+      <div class="ghost" aria-hidden="true">re</div>
+      <div class="blog-anchor-eyebrow">Blog drop 01</div>
+      <h3>Realtor.com Just Featured a Seattle Startup Quietly Solving the Housing Crisis</h3>
+      <div class="blog-anchor-meta">Publishes Thursday, April 30, 2026 · 8:00 AM PT · /blog/in-the-news/realtor-com-features-respace-co-homeownership/</div>
+    </div>
+
+    <!-- PROMPT 1.1 LINKEDIN -->
+    <div class="prompt-card with-anchor">
+      <div class="prompt-platform-bar">
+        <div class="platform">LinkedIn</div>
+        <div class="schedule">Thu Apr 30 · 8:00 AM PT</div>
+      </div>
+      <div class="prompt-body">
+        <h4>Mansu prompt (paste this whole block)</h4>
+        <div class="copyable code">Generate a LinkedIn post for reSpace announcing the Realtor.com feature.
+
+VOICE: Confident. Irreverent. Warm. Brilliant friend who happens to be a real estate attorney plus stand up comedian. No corporate hedging. Short punchy sentences. NO em dashes anywhere.
+
+VISUAL: One image, 1200x627px (LinkedIn link card aspect). Architectural photo of a historic Seattle craftsman at golden hour. Yellow or cream painted siding with white trim. Lush mature landscaping. Warm amber tones, golden hour lighting, architectural photography, shot on 35mm film, no text overlays, no watermarks. The vibe: this is the home a working professional was told they could not afford.
+
+CAPTION (use exactly this text):
+Realtor.com just put a name to what Seattle has been quietly building.
+
+Co-homeownership.
+
+The piece called us a startup solving the housing affordability crisis. We will take that. The number we care about more is the one inside the article. Suites in Seattle starting at $124,500. Monthly cost comparable to a one bedroom rental in the same neighborhood. Real ownership, structured through a single purpose LLC. Wealth that builds for the person who lives there, not the institution that holds the deed.
+
+The housing market said no for a long time. We said watch us.
+
+If you have been told you cannot afford to own where you actually want to live, this is the article that proves the system finally has a path.
+
+Read it. Then talk to a real human at (206) 222-6322 or join the waitlist at respace.co.
+
+#cohomeownership #housingaffordability #seattlerealestate #ownership #therealtoredotcom
+
+FIRST COMMENT (post immediately after publishing):
+Not an investment. Not a solicitation. reSpace is structured co-homeownership through a single purpose LLC. Each co-owner holds a membership interest with exclusive use of a private suite plus shared use of common areas.
+
+LINK PREVIEW: https://respace.co/blog/in-the-news/realtor-com-features-respace-co-homeownership/
+
+POSTED BY: Katrina Romatowski, CEO of reSpace
+TAG: @realtordotcom @cityofseattle</div>
+        <div class="prompt-meta">
+          <div><strong>Goal</strong>Brand authority + news traffic</div>
+          <div><strong>Pillar</strong>The Movement</div>
+          <div><strong>Archetype</strong>Vision Holder</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROMPT 1.2 INSTAGRAM -->
+    <div class="prompt-card">
+      <div class="prompt-platform-bar">
+        <div class="platform">Instagram · Carousel</div>
+        <div class="schedule">Thu Apr 30 · 12:00 PM PT</div>
+      </div>
+      <div class="prompt-body">
+        <h4>Mansu prompt (paste this whole block)</h4>
+        <div class="copyable code">Generate a 5-slide Instagram carousel announcing the Realtor.com feature.
+
+FORMAT: 5 slides, each 1080x1350px (4:5 portrait). Carousel format.
+
+DESIGN SYSTEM:
+- Slide background: alternate Midnight Navy #1A1A2E and Warm Sand #F5EFE6.
+- Headline type: Clash Display Bold, white on navy or navy on sand, 60 to 90px size.
+- Body type: DM Sans Regular, 28 to 36px, one or two short lines per slide.
+- Coral #E8604C used only for accent (small text, underline rule, or arrow).
+- Ghost type: oversized 're' at 6 percent opacity bleeding off bottom right corner of slide 1 only.
+- Logo: small reSpace wordmark bottom left corner of slide 1 ('re' in coral, 'Space' in white).
+
+SLIDE 1 (HOOK · navy bg, white type):
+Headline: 'Realtor.com just made it official.'
+Subhead: 'There is a new way to own a home in Seattle.'
+Bottom right corner ghost: 're'
+Bottom left corner: reSpace logo
+
+SLIDE 2 (THE PROBLEM · sand bg, navy type):
+Headline: 'The math used to be impossible.'
+Body: '$1.175M median home in Seattle. Average rent $2,395. Wage growth almost flat. The gap between renting and owning kept getting wider.'
+
+SLIDE 3 (THE SHIFT · navy bg, white type):
+Headline: 'Realtor.com noticed why it changed.'
+Body: 'They featured a Seattle startup using co-homeownership to combat the affordability crisis. One existing home. Multiple owners. A new category of ownership.'
+
+SLIDE 4 (THE NUMBER · sand bg, navy type, big number coral):
+Big number (Clash Display ExtraBold, coral #E8604C, 220px): '$124,500'
+Below in DM Sans Bold navy: 'Starting suite price at The Leschi Collection.'
+Body small: 'Monthly all in cost from $2,430. Comparable to renting a one bedroom in the same neighborhood. Equity, yours.'
+
+SLIDE 5 (CTA · navy bg, coral CTA):
+Headline (white): 'Read the article.'
+Subhead (white): 'Then own the neighborhood.'
+Coral CTA button shape (white text): 'Link in bio · respace.co'
+Bottom right corner ghost: 're'
+
+CAPTION (use exactly this text, paste in IG composer):
+Realtor.com put a name to what Seattle has been quietly building. Co-homeownership.
+
+We are not a workaround. We are not a compromise. We are a new category. Suites starting at $124,500. Monthly cost comparable to a one bedroom rental. Equity that finally belongs to the person who lives there.
+
+The housing market said no for a long time. We said watch us.
+
+Link in bio for the full article. Or call us at (206) 222-6322.
+
+Not an investment. Not a solicitation.
+
+#cohomeownership #seattlerealestate #ownership #leschi #seattle #pnwlife #firsttimehomebuyer #housingaffordability #wealthbuilding #ownthenneighborhood #respace #therealtoredotcom #seattlestartup #pnwhomes #seattlehomes #washingtonstate #pacificnorthwest #buyingahome #homeownership #seattlelife</div>
+        <div class="prompt-meta">
+          <div><strong>Goal</strong>Hook + identity shift</div>
+          <div><strong>Pillar</strong>The Movement</div>
+          <div><strong>Archetype</strong>Vision Holder + Mirror</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROMPT 1.3 FACEBOOK -->
+    <div class="prompt-card">
+      <div class="prompt-platform-bar">
+        <div class="platform">Facebook</div>
+        <div class="schedule">Thu Apr 30 · 6:00 PM PT</div>
+      </div>
+      <div class="prompt-body">
+        <h4>Mansu prompt (paste this whole block)</h4>
+        <div class="copyable code">Generate a Facebook post announcing the Realtor.com feature, warmer and more community oriented than LinkedIn.
+
+VISUAL: Single image, 1200x630px. Architectural photo of a Seattle Leschi or Crown Hill craftsman home, golden hour. Same brand palette and photography rules as Block 1. Warm amber tones, golden hour lighting, architectural photography, shot on 35mm film, no text overlays, no watermarks.
+
+CAPTION (use exactly this text):
+This week Realtor.com featured a Seattle startup using co-homeownership to take on the housing affordability crisis. That startup is reSpace. It is built right here in Seattle, for Seattle.
+
+Co-homeownership is simple. One home in a neighborhood you already love. Two to eight private suites, each with an ensuite bath, walk in closet, wet bar, and in suite laundry. Shared common areas. Each co-owner holds a membership interest in a single purpose LLC. You own. You build wealth. You can sell when you are ready.
+
+Suites at The Leschi Collection start at $124,500. Monthly costs run $2,430 to $2,966 all in. About what a one bedroom rents for in the same neighborhood.
+
+If you have ever stood in a Seattle open house and wondered how anyone you know is supposed to afford this, the answer is finally on the table.
+
+Read the Realtor.com piece in the link. Or call us at (206) 222-6322 and we will tell you exactly what the math looks like for your situation.
+
+Not an investment. Not a solicitation.
+
+LINK: https://respace.co/blog/in-the-news/realtor-com-features-respace-co-homeownership/
+
+LOCATION TAG: Seattle, Washington
+TAG PAGE: @reSpace</div>
+        <div class="prompt-meta">
+          <div><strong>Goal</strong>Local community warmth</div>
+          <div><strong>Pillar</strong>The Movement</div>
+          <div><strong>Archetype</strong>The Guide</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- BLOG 2 -->
+<section class="section" id="blog2" style="padding-top: 0;">
+  <div class="container">
+
+    <div class="blog-anchor">
+      <div class="ghost" aria-hidden="true">re</div>
+      <div class="blog-anchor-eyebrow">Blog drop 02</div>
+      <h3>Why Cohousing Has Not Solved Affordability. And What Is Emerging Instead.</h3>
+      <div class="blog-anchor-meta">Publishes Monday, May 4, 2026 · 8:00 AM PT · /blog/homebuying-tips/cohousing-affordable-housing-crisis-co-homeownership/</div>
+    </div>
+
+    <!-- PROMPT 2.1 LINKEDIN -->
+    <div class="prompt-card with-anchor">
+      <div class="prompt-platform-bar">
+        <div class="platform">LinkedIn</div>
+        <div class="schedule">Mon May 4 · 8:00 AM PT</div>
+      </div>
+      <div class="prompt-body">
+        <h4>Mansu prompt (paste this whole block)</h4>
+        <div class="copyable code">Generate a LinkedIn post on the cohousing affordability paradox. Audience: housing advocates, brokers, urbanists, founders, anyone who has paid attention to cohousing for the last decade.
+
+VOICE: Authoritative. Architect tone. Data forward. Generous to the cohousing movement. Confident about the new category. NO em dashes anywhere.
+
+VISUAL: A simple data visualization image, 1200x627px. Two bars side by side. Left bar (sand background, navy bar): 'Tulsa median home price $213K.' Right bar (navy background, coral bar twice as tall): 'Tulsa cheapest cohousing unit $350K+.' DM Sans labels. Clash Display headline at top: 'The math the cohousing movement is finally naming.' No watermarks. No logos other than small reSpace wordmark in bottom right.
+
+CAPTION (use exactly this text):
+Cohousing was right about almost everything. Community as infrastructure. Shared resources as a path to affordability. Owners building neighborhoods together.
+
+It was wrong about one thing. The math.
+
+Shelterforce reported in March 2026 that the cheapest cohousing unit in Tulsa cost more than $350,000 in a city where the median home price was $213,000. That is not a takedown. That is the cohousing movement's leadership pointing at the same data and pivoting to retrofit existing housing instead of building new.
+
+The pivot matters. Five to ten years of ground up development, urban edge land economics, and market rate financing kept cohousing locked out of the people it was built for. Retrofitting existing homes solves all three.
+
+Co-homeownership is what retrofit looks like at one home at a time. Single purpose LLC ownership. Private suites with shared common areas. In house financing built around the structure from day one.
+
+The cohousing wisdom is keeping. The financial wrapper is finally working.
+
+Full piece linked in comments.
+
+#cohousing #cohomeownership #housingaffordability #wealthbuilding #urbanism #realestate #seattle
+
+FIRST COMMENT:
+Read the full article: https://respace.co/blog/homebuying-tips/cohousing-affordable-housing-crisis-co-homeownership/
+Not an investment. Not a solicitation.
+
+POSTED BY: Katrina Romatowski, CEO of reSpace</div>
+        <div class="prompt-meta">
+          <div><strong>Goal</strong>Authority on cohousing query</div>
+          <div><strong>Pillar</strong>Co-Ownership Solution</div>
+          <div><strong>Archetype</strong>The Architect</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROMPT 2.2 INSTAGRAM -->
+    <div class="prompt-card">
+      <div class="prompt-platform-bar">
+        <div class="platform">Instagram · Stat post</div>
+        <div class="schedule">Mon May 4 · 12:00 PM PT</div>
+      </div>
+      <div class="prompt-body">
+        <h4>Mansu prompt (paste this whole block)</h4>
+        <div class="copyable code">Generate a single Instagram stat image, 1080x1350px, 4:5 portrait.
+
+DESIGN:
+- Background: Midnight Navy #1A1A2E.
+- Hero number, Clash Display ExtraBold, coral #E8604C, 360px, centered upper half: '$350K'
+- Below the number, in white DM Sans Bold 32px, two lines: 'Cheapest cohousing unit in Tulsa.' / 'In a city where the median home is $213K.'
+- Lower third: white horizontal rule. Below the rule, DM Sans Regular 22px, 'The cohousing movement is now retrofitting existing homes. We have been quietly doing the same thing.'
+- Bottom: small reSpace logo (re in coral, Space in white) and tiny credit text 'Source: Shelterforce, March 2026.'
+- Ghost type 're' at 6 percent opacity bleeding off bottom right.
+
+CAPTION (use exactly this text):
+The cohousing movement spent thirty years promising lower costs. Most U.S. cohousing units now sell at market rate or above.
+
+The leaders of the movement are now retrofitting existing homes instead of building new. We have been quietly doing the same thing.
+
+One home. Multiple private suites. Shared common areas. Each co-owner holds a membership interest in a single purpose LLC that owns the property.
+
+Suites in Seattle start at $124,500.
+
+Link in bio for the full breakdown. Or call (206) 222-6322 to talk to a real human about your situation.
+
+Not an investment. Not a solicitation.
+
+#cohousing #cohomeownership #housingaffordability #seattle #seattlehomes #leschi #firsttimehomebuyer #ownership #wealthbuilding #urbanism #pnwlife #ownthenneighborhood #respace #affordablehomeownership #seattlemortgage #washingtonstate #pacificnorthwest #realestateseattle #homeownershipmatters #buildgenerationalwealth</div>
+        <div class="prompt-meta">
+          <div><strong>Goal</strong>Capture the data point</div>
+          <div><strong>Pillar</strong>Co-Ownership Solution</div>
+          <div><strong>Archetype</strong>The Architect</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROMPT 2.3 FACEBOOK -->
+    <div class="prompt-card">
+      <div class="prompt-platform-bar">
+        <div class="platform">Facebook</div>
+        <div class="schedule">Mon May 4 · 6:00 PM PT</div>
+      </div>
+      <div class="prompt-body">
+        <h4>Mansu prompt (paste this whole block)</h4>
+        <div class="copyable code">Generate a Facebook post on cohousing vs co-homeownership, in a warm community tone for local Seattle audiences.
+
+VISUAL: Single image, 1200x630px. A historic Seattle craftsman home with a wraparound porch at twilight. Edison string lights along the porch. Warm amber tones, golden hour or blue hour lighting, architectural photography, shot on 35mm film, no text overlays, no watermarks.
+
+CAPTION (use exactly this text):
+If you have been on a cohousing waitlist for years and the numbers never quite worked, you are not the problem. The math was the problem.
+
+The cohousing movement spent thirty years building intentional communities of separate homes around shared common space. The values were always right. The economics were always brutal. Five to ten years of ground up development. Urban edge land. Market rate or higher per unit pricing.
+
+Co-homeownership is the same wisdom in a different wrapper. One existing home in a neighborhood you actually want to live in. Two to eight private suites, each with an ensuite bath, walk in closet, and wet bar. Shared common areas. Each co-owner holds a membership interest in a single purpose LLC.
+
+The Leschi Collection is open now in Seattle. Suites start at $124,500. The Grove in Crown Hill is in pre sale at $179,000. Greenlake Craftsman is on deck.
+
+If cohousing was the dream, this is the version of the dream that finally works. Talk to a real human at (206) 222-6322 or read the breakdown at the link.
+
+Not an investment. Not a solicitation.
+
+LINK: https://respace.co/blog/homebuying-tips/cohousing-affordable-housing-crisis-co-homeownership/
+LOCATION TAG: Leschi, Seattle, Washington</div>
+        <div class="prompt-meta">
+          <div><strong>Goal</strong>Validate cohousing seekers</div>
+          <div><strong>Pillar</strong>Co-Ownership Solution</div>
+          <div><strong>Archetype</strong>The Guide</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- BLOG 3 -->
+<section class="section" id="blog3" style="padding-top: 0;">
+  <div class="container">
+
+    <div class="blog-anchor">
+      <div class="ghost" aria-hidden="true">re</div>
+      <div class="blog-anchor-eyebrow">Blog drop 03</div>
+      <h3>Co-Living Was a Workaround. America Wants Ownership.</h3>
+      <div class="blog-anchor-meta">Publishes Thursday, May 7, 2026 · 8:00 AM PT · /blog/homebuying-tips/co-living-vs-co-homeownership-seattle/</div>
+    </div>
+
+    <!-- PROMPT 3.1 LINKEDIN -->
+    <div class="prompt-card with-anchor">
+      <div class="prompt-platform-bar">
+        <div class="platform">LinkedIn</div>
+        <div class="schedule">Thu May 7 · 8:00 AM PT</div>
+      </div>
+      <div class="prompt-body">
+        <h4>Mansu prompt (paste this whole block)</h4>
+        <div class="copyable code">Generate a LinkedIn post on the structural difference between co-living and co-homeownership. Audience: founders, brokers, urbanists, anyone who has watched co-living scale.
+
+VOICE: Confident, mildly irreverent, warm. Generous to co-living for what it solved. Direct about what it cannot do. NO em dashes.
+
+VISUAL: A two panel comparison graphic, 1200x627px. Left panel sand background: 'Co-Living. Lease. $2,395 a month rent. 10 years $287K paid. Equity zero.' Right panel navy background: 'Co-Homeownership. Membership interest. $2,430 a month all in. 10 years building wealth in your name.' Clash Display headline at top: 'Same monthly. Different math.' DM Sans body. Coral accent rule between the panels. Small reSpace wordmark bottom right.
+
+CAPTION (use exactly this text):
+Co-living solved a real problem. Living alone in a major city on a normal income was breaking people. Co-living gave us the kitchen, the couch, the four neighbors, and the operator that handled the trash and the wifi. Loneliness went down. Density went up.
+
+The thing co-living could never do is the thing every co-living tenant eventually wants. Build wealth.
+
+A lease produces zero equity for the person who signs it. Ten years at the average $2,395 a month is $287,000 paid out and zero owned.
+
+Co-homeownership is what comes next. Same private space. Same shared kitchen. Same community. The difference is a membership interest in a single purpose LLC instead of a lease. The monthly cost is comparable. The equity finally accrues to the person who lives there.
+
+Co-living was the right idea for a workforce that needed to keep moving. Co-homeownership is the right structure for the same workforce, three years later, that is ready to stop renting their lives.
+
+Full piece linked in comments.
+
+#coliving #cohomeownership #wealthbuilding #seattle #realestate #ownership #firsttimehomebuyer
+
+FIRST COMMENT:
+https://respace.co/blog/homebuying-tips/co-living-vs-co-homeownership-seattle/
+Not an investment. Not a solicitation.
+
+POSTED BY: Katrina Romatowski, CEO of reSpace</div>
+        <div class="prompt-meta">
+          <div><strong>Goal</strong>Capture co-living search</div>
+          <div><strong>Pillar</strong>Wealth Gap Reality</div>
+          <div><strong>Archetype</strong>Vision Holder</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROMPT 3.2 INSTAGRAM -->
+    <div class="prompt-card">
+      <div class="prompt-platform-bar">
+        <div class="platform">Instagram · Carousel</div>
+        <div class="schedule">Thu May 7 · 12:00 PM PT</div>
+      </div>
+      <div class="prompt-body">
+        <h4>Mansu prompt (paste this whole block)</h4>
+        <div class="copyable code">Generate a 4-slide Instagram carousel comparing co-living and co-homeownership. 1080x1350px each, 4:5 portrait.
+
+DESIGN: Same brand system as Blog 1 carousel. Navy or sand backgrounds, coral accents, Clash Display + DM Sans, ghost re bleed on slide 1, small logo bottom left of slide 1.
+
+SLIDE 1 (HOOK · navy bg, white type, ghost re bleed):
+Headline: 'Co-living gave you a kitchen.'
+Subhead: 'It never gave you the house.'
+
+SLIDE 2 (THE LEASE · sand bg, navy type):
+Big number, Clash Display ExtraBold, coral #E8604C: '$287,000'
+Below in DM Sans Bold navy: '10 years of one bedroom rent in a major U.S. city.'
+Body small: 'Equity built. Zero.'
+
+SLIDE 3 (THE SHIFT · navy bg, white type):
+Headline: 'There is a structure that fixes the math.'
+Body: 'Same private suite. Same shared kitchen. Same community. Plus a membership interest in the LLC that owns the property. Sell when you are ready. Build wealth that stays with you.'
+
+SLIDE 4 (CTA · sand bg, navy type, coral CTA):
+Headline (navy): 'Stop renting your life.'
+Subhead (navy): 'Suites at The Leschi Collection from $124,500.'
+Coral CTA button (white text): 'Link in bio · respace.co'
+
+CAPTION (use exactly this text):
+Co-living solved the loneliness problem. It never solved the wealth problem.
+
+Same private space. Same shared kitchen. Same community. The structure underneath is the difference. A lease produces zero equity. A membership interest in a co-homeownership LLC builds it.
+
+Suites at The Leschi Collection start at $124,500. Monthly cost from $2,430 all in. About what a one bedroom rents for in the same neighborhood.
+
+Link in bio for the full breakdown. Or call (206) 222-6322.
+
+Not an investment. Not a solicitation.
+
+#coliving #cohomeownership #seattle #leschi #firsttimehomebuyer #ownership #wealthbuilding #stoprentingyourlife #seattlehomes #pnwlife #seattlerealestate #respace #ownthenneighborhood #affordablehomeownership #washingtonstate #pacificnorthwest #seattlestartup #urbanliving #seattlelife #homeownership</div>
+        <div class="prompt-meta">
+          <div><strong>Goal</strong>Identity shift, capture coliving search</div>
+          <div><strong>Pillar</strong>Wealth Gap Reality</div>
+          <div><strong>Archetype</strong>Vision Holder + Mirror</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROMPT 3.3 FACEBOOK -->
+    <div class="prompt-card">
+      <div class="prompt-platform-bar">
+        <div class="platform">Facebook</div>
+        <div class="schedule">Thu May 7 · 6:00 PM PT</div>
+      </div>
+      <div class="prompt-body">
+        <h4>Mansu prompt (paste this whole block)</h4>
+        <div class="copyable code">Generate a Facebook post that introduces co-homeownership to a Seattle co-living audience in a warm, neighborly tone.
+
+VISUAL: One image, 1200x630px. Interior of a craftsman home kitchen at golden hour, walnut cabinets, marble waterfall island, brass hardware, plants. Warm amber tones, golden hour lighting, architectural photography, shot on 35mm film, no text overlays, no watermarks.
+
+CAPTION (use exactly this text):
+If you have spent the last few years in a co-living place in Capitol Hill or Ballard, this one is for you.
+
+Co-living solved a lot. The community is real. The shared kitchen is real. The private bedroom you can finally afford is real. The thing co-living cannot do is build wealth for you. A lease produces no equity. Ten years from now you will have paid $287,000 in rent and own none of it.
+
+Co-homeownership is what comes after the realization. Same private space. This time it has a wet bar, a walk in closet, an ensuite bath, and in suite laundry. Same shared kitchen and living room. Same community. The legal structure underneath is a single purpose LLC. You hold a membership interest in the LLC that owns the home. You build wealth in your name. You can sell when you are ready.
+
+The Leschi Collection is open now. Suites from $124,500. Monthly cost from $2,430 all in. About what you are already paying for co-living rent in the same neighborhood.
+
+Read the comparison at the link or call (206) 222-6322 to talk to a real human about your situation.
+
+Not an investment. Not a solicitation.
+
+LINK: https://respace.co/blog/homebuying-tips/co-living-vs-co-homeownership-seattle/
+LOCATION TAG: Capitol Hill, Seattle, Washington</div>
+        <div class="prompt-meta">
+          <div><strong>Goal</strong>Reach Seattle co-living renters</div>
+          <div><strong>Pillar</strong>Wealth Gap Reality</div>
+          <div><strong>Archetype</strong>The Guide</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- BLOG 4 -->
+<section class="section" id="blog4" style="padding-top: 0;">
+  <div class="container">
+
+    <div class="blog-anchor">
+      <div class="ghost" aria-hidden="true">re</div>
+      <div class="blog-anchor-eyebrow">Blog drop 04</div>
+      <h3>How to Buy a House with Friends in 2026 Without Wrecking the Friendship or the Mortgage.</h3>
+      <div class="blog-anchor-meta">Publishes Monday, May 11, 2026 · 8:00 AM PT · /blog/homebuying-tips/how-to-buy-house-with-friends-llc-co-homeownership/</div>
+    </div>
+
+    <!-- PROMPT 4.1 LINKEDIN -->
+    <div class="prompt-card with-anchor">
+      <div class="prompt-platform-bar">
+        <div class="platform">LinkedIn</div>
+        <div class="schedule">Mon May 11 · 8:00 AM PT</div>
+      </div>
+      <div class="prompt-body">
+        <h4>Mansu prompt (paste this whole block)</h4>
+        <div class="copyable code">Generate a LinkedIn post on the legal structure problem in informal co-buying. Audience: brokers, lawyers, founders, anyone with a friend group asking should we just buy a place together.
+
+VOICE: Architect tone. Useful. Specific. Mildly irreverent. NO em dashes.
+
+VISUAL: A simple architectural illustration, 1200x627px. Three icons in a row, each with a label below in Clash Display Bold navy: 1) handshake icon, label 'Joint Mortgage' 2) document icon, label 'LLC' 3) house icon, label 'Tenancy in Common.' Sand background. Coral accent line connecting the three icons. Small reSpace wordmark bottom right.
+
+CAPTION (use exactly this text):
+Most informal co-buying deals do not break at the offer. They break at the exit.
+
+Three friends qualify for a joint mortgage. They take title in tenancy in common. Three years later one wants to sell, one cannot afford to buy them out, the third is on a temporary leave from their job. Default cure was never written down. Right of first refusal does not exist. Valuation method is a Zillow number nobody agrees with.
+
+The structural fix is boring and powerful. A single purpose LLC that holds title. An operating agreement that defines monthly contributions, decision making, default cure, right of first refusal, and the valuation method. All written before the closing table.
+
+The financing piece is where most groups get stuck. Conventional mortgages do not lend to LLCs. Qualifying as individuals and transferring to the LLC after closing can trigger due on sale. We solved this by underwriting the LLC structure from day one.
+
+If you have a friend group that has been kitchen table planning a house purchase for a year, the math probably works. The structure is the part most groups miss. We have built reSpace to handle all of it.
+
+Full piece in the comments.
+
+#cobuying #realestate #homebuying #friendsbuyhome #cohomeownership #LLC #tenancyincommon #seattlerealestate
+
+FIRST COMMENT:
+https://respace.co/blog/homebuying-tips/how-to-buy-house-with-friends-llc-co-homeownership/
+Not an investment. Not a solicitation.
+
+POSTED BY: Katrina Romatowski, CEO of reSpace</div>
+        <div class="prompt-meta">
+          <div><strong>Goal</strong>Authority + commercial intent</div>
+          <div><strong>Pillar</strong>The Tools</div>
+          <div><strong>Archetype</strong>The Architect</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROMPT 4.2 INSTAGRAM -->
+    <div class="prompt-card">
+      <div class="prompt-platform-bar">
+        <div class="platform">Instagram · Carousel</div>
+        <div class="schedule">Mon May 11 · 12:00 PM PT</div>
+      </div>
+      <div class="prompt-body">
+        <h4>Mansu prompt (paste this whole block)</h4>
+        <div class="copyable code">Generate a 5-slide Instagram carousel on buying a house with friends. 1080x1350px each, 4:5 portrait.
+
+DESIGN: Same brand system. Navy and sand alternating. Coral accents. Clash Display + DM Sans. Ghost re bleed on slide 1.
+
+SLIDE 1 (HOOK · navy bg, white type):
+Headline: 'You and three friends.'
+Subhead: 'A kitchen table. A pizza. A Zillow tab open.'
+Bottom right ghost: 're'
+
+SLIDE 2 (THE MATH · sand bg, navy type):
+Headline: 'The math actually works.'
+Body: 'Three incomes can buy a house in the neighborhood you all want. One income cannot. The structure is the part most groups skip.'
+
+SLIDE 3 (THE TRAP · navy bg, white type):
+Headline: 'Where it usually breaks.'
+Body: 'Joint mortgages with no right of first refusal. LLCs the lender will not finance. Operating agreements no one wrote. Friends end up in court instead of a kitchen.'
+
+SLIDE 4 (THE FIX · sand bg, navy type, coral accent):
+Headline: 'A single purpose LLC.'
+Body: 'Operating agreement defines contributions, decisions, default cure, right of first refusal, valuation. All written before the closing table. We handle it.'
+
+SLIDE 5 (CTA · navy bg, coral CTA):
+Headline (white): 'Bring the people.'
+Subhead (white): 'We bring the structure.'
+Coral CTA button: 'Link in bio · respace.co'
+
+CAPTION (use exactly this text):
+You and three friends. A kitchen table. A pizza. A Zillow tab open.
+
+The math works. Three incomes can buy a house in the neighborhood you actually want. The reason most groups never close is structural. Joint mortgages without exit terms. LLCs the lender will not finance. Operating agreements no one wrote.
+
+reSpace handles all of it. Single purpose LLC. Operating agreement built in. In house financing built around the LLC structure from day one. Right of first refusal so no friend can sell to a stranger.
+
+Bring the people. Keep the friendship. Own the neighborhood.
+
+Suites at The Leschi Collection from $124,500. The Grove in pre sale from $179,000.
+
+Link in bio. Or call (206) 222-6322.
+
+Not an investment. Not a solicitation.
+
+#cobuyingfriends #buyahousewithfriends #cohomeownership #seattlerealestate #firsttimehomebuyer #ownership #leschi #seattle #pnwlife #respace #ownthenneighborhood #seattlehomes #wealthbuilding #affordablehomeownership #pacificnorthwest #seattlemortgage #realestateseattle #bestfriends #homeownershipgoals #seattlestartup</div>
+        <div class="prompt-meta">
+          <div><strong>Goal</strong>High-intent commercial</div>
+          <div><strong>Pillar</strong>The Tools</div>
+          <div><strong>Archetype</strong>The Architect + Guide</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROMPT 4.3 FACEBOOK -->
+    <div class="prompt-card">
+      <div class="prompt-platform-bar">
+        <div class="platform">Facebook</div>
+        <div class="schedule">Mon May 11 · 6:00 PM PT</div>
+      </div>
+      <div class="prompt-body">
+        <h4>Mansu prompt (paste this whole block)</h4>
+        <div class="copyable code">Generate a Facebook post on co-buying with friends, conversational and useful for Seattle friend groups already considering it.
+
+VISUAL: Lifestyle image, 1200x630px. Three friends laughing on a wraparound porch of a craftsman house at golden hour, holding coffee mugs, casual professional wardrobe (denim jackets, linen blazers). Mixed ethnicities. Late 20s to early 30s. Candid, not posed. Warm amber tones, golden hour lighting, architectural photography, shot on 35mm film, no text overlays, no watermarks.
+
+CAPTION (use exactly this text):
+Buying a house with friends is one of the smartest financial moves a young Seattle household can make right now. The math works. Three incomes can buy in the neighborhood you actually want.
+
+The structure is the part the internet keeps getting wrong, and the part friendships keep losing to.
+
+Joint mortgages with no exit plan. LLCs that conventional lenders will not finance. Operating agreements written from a free template no one read. The math is fine. The structure is what breaks the friendship.
+
+reSpace solves it. A single purpose LLC holds title. The operating agreement is written before you sign anything. Right of first refusal means no one can sell to a stranger. Default cure is defined. Decision making is written. In house financing is built around the LLC structure from day one.
+
+Suites at The Leschi Collection from $124,500. Monthly cost from $2,430 all in. About what a one bedroom rents for in the same neighborhood.
+
+If you have a group of friends that has been kitchen table planning this for a year, the math probably works. The structure is what we built reSpace for.
+
+Read the full breakdown at the link. Or call (206) 222-6322 and we will run the actual numbers for your group in one conversation.
+
+Not an investment. Not a solicitation.
+
+LINK: https://respace.co/blog/homebuying-tips/how-to-buy-house-with-friends-llc-co-homeownership/
+LOCATION TAG: Seattle, Washington</div>
+        <div class="prompt-meta">
+          <div><strong>Goal</strong>Local commercial conversion</div>
+          <div><strong>Pillar</strong>The Tools</div>
+          <div><strong>Archetype</strong>The Guide</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- HOW TO USE -->
+<section class="section" style="background: var(--sand);">
+  <div class="container">
+    <div class="section-eyebrow">For Mansu</div>
+    <h2 class="h-section">How to run these prompts</h2>
+    <p class="lead">Each prompt block is self contained. Copy the full block (everything between the lines) and paste into Mansu. Mansu generates the visual asset. Mary takes the visual + caption and posts at the scheduled time. Disclaimer goes in the first comment, not the post body.</p>
+
+    <div style="margin-top: 24px;">
+      <ol style="font-size: 15px; line-height: 1.7; margin-left: 22px;">
+        <li>Open the prompt for the post you are running.</li>
+        <li>Click the prompt block to select all. Copy.</li>
+        <li>Paste into Mansu. Run.</li>
+        <li>Review output for brand compliance. Use the brand block at the top of this page as a final check.</li>
+        <li>Save the asset. Drop it in the scheduling tool with the caption and hashtag set above.</li>
+        <li>Schedule for the day and time on the post header.</li>
+        <li>Post the disclaimer (&quot;Not an investment. Not a solicitation.&quot;) as the first comment immediately after publish.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand"><span class="re">re</span>Space</div>
+      <div>Mansu prompt set v1.0 · April 29, 2026</div>
+    </div>
+    <div>
+      <div>Rachael Barclay · The Savvy Digital Co.</div>
+      <div>rachael@thesavvydigitalco.com</div>
+      <div>(206) 222-6322 · office@reSpace.co</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Click to select prompt block (selects all so users can Cmd+C)
+document.querySelectorAll('.copyable.code').forEach(block => {
+  block.style.cursor = 'pointer';
+  block.title = 'Click to select all, then Cmd+C / Ctrl+C to copy';
+  block.addEventListener('click', () => {
+    const range = document.createRange();
+    range.selectNodeContents(block);
+    const sel = window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+  });
+});
+</script>
+
+</body>
+</html>

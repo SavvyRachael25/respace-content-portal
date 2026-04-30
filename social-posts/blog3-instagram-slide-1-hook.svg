@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+<defs>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700;800;900&amp;display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&amp;display=swap');
+.display { font-family: 'Clash Display', Inter, 'Helvetica Neue', 'Arial Black', Arial, sans-serif; font-weight: 700; }
+.sans { font-family: 'DM Sans', Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1080" height="1350" fill="#1A1A2E"/>
+<text x="1050" y="1576.8" text-anchor="end" class="display" font-size="1512" fill="#FFFFFF" opacity="0.045" letter-spacing="-0.04em">re</text>
+
+<text x="80" y="220" class="sans" font-weight="600" font-size="30" fill="#E8604C" letter-spacing="0.18em">BLOG 03 · MAY 7, 2026</text>
+<text x="80" y="510" class="display" font-size="110" fill="#FFFFFF" letter-spacing="-0.02em">Co-living gave</text>
+<text x="80" y="630" class="display" font-size="110" fill="#FFFFFF" letter-spacing="-0.02em">you a kitchen.</text>
+<line x1="80" y1="720" x2="260" y2="720" stroke="#E8604C" stroke-width="4"/>
+<text x="80" y="830" class="display" font-size="80" fill="#E8604C" letter-spacing="-0.02em">It never gave</text>
+<text x="80" y="920" class="display" font-size="80" fill="#E8604C" letter-spacing="-0.02em">you the house.</text>
+<g>
+<text x="80" y="1280" class="display" font-size="44" fill="#E8604C" letter-spacing="-0.02em">re</text>
+<text x="121" y="1280" class="display" font-size="44" fill="#FFFFFF" letter-spacing="-0.02em">Space</text>
+</g>
+
+</svg>

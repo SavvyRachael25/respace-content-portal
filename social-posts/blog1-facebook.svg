@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+<defs>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700;800;900&amp;display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&amp;display=swap');
+.display { font-family: 'Clash Display', Inter, 'Helvetica Neue', 'Arial Black', Arial, sans-serif; font-weight: 700; }
+.sans { font-family: 'DM Sans', Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1200" height="630" fill="#1A1A2E"/>
+<text x="1170" y="762.3" text-anchor="end" class="display" font-size="882" fill="#FFFFFF" opacity="0.04" letter-spacing="-0.04em">re</text>
+
+<rect x="0" y="0" width="1200" height="630" fill="#3a2818"/>
+<defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#d18a4a"/><stop offset="100%" stop-color="#3a2818"/></linearGradient></defs>
+<rect width="1200" height="630" fill="url(#g1)" opacity="0.85"/>
+<rect width="1200" height="630" fill="#1A1A2E" opacity="0.55"/>
+<text x="60" y="110" class="sans" font-weight="600" font-size="20" fill="#E8604C" letter-spacing="0.18em">[MANSU PHOTO PLACEHOLDER]</text>
+<text x="60" y="140" class="sans" font-weight="500" font-size="14" fill="#FFFFFF" opacity="0.7">Replace background with golden-hour Leschi craftsman photo</text>
+<text x="60" y="280" class="display" font-size="68" fill="#FFFFFF" letter-spacing="-0.02em">A Seattle startup is</text>
+<text x="60" y="350" class="display" font-size="68" fill="#FFFFFF" letter-spacing="-0.02em">solving the housing</text>
+<text x="60" y="420" class="display" font-size="68" fill="#E8604C" letter-spacing="-0.02em">affordability crisis.</text>
+<line x1="60" y1="470" x2="200" y2="470" stroke="#E8604C" stroke-width="3"/>
+<text x="60" y="525" class="sans" font-weight="500" font-size="24" fill="#FFFFFF" opacity="0.92">Realtor.com just put a name to it.</text>
+<text x="60" y="565" class="sans" font-weight="700" font-size="22" fill="#FFFFFF">Read at respace.co</text>
+<g>
+<text x="900" y="580" class="display" font-size="44" fill="#E8604C" letter-spacing="-0.02em">re</text>
+<text x="941" y="580" class="display" font-size="44" fill="#FFFFFF" letter-spacing="-0.02em">Space</text>
+</g>
+
+</svg>

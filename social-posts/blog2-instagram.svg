@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+<defs>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700;800;900&amp;display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&amp;display=swap');
+.display { font-family: 'Clash Display', Inter, 'Helvetica Neue', 'Arial Black', Arial, sans-serif; font-weight: 700; }
+.sans { font-family: 'DM Sans', Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1080" height="1350" fill="#1A1A2E"/>
+<text x="1050" y="1576.8" text-anchor="end" class="display" font-size="1512" fill="#FFFFFF" opacity="0.045" letter-spacing="-0.04em">re</text>
+
+<text x="80" y="220" class="sans" font-weight="600" font-size="30" fill="#E8604C" letter-spacing="0.18em">THE COHOUSING DATA</text>
+<text x="540" y="540" text-anchor="middle" class="display" font-size="320" fill="#E8604C" letter-spacing="-0.04em">$350K</text>
+<line x1="380" y1="600" x2="700" y2="600" stroke="#FFFFFF" stroke-width="3"/>
+<text x="540" y="690" text-anchor="middle" class="sans" font-weight="700" font-size="44" fill="#FFFFFF">Cheapest cohousing unit</text>
+<text x="540" y="745" text-anchor="middle" class="sans" font-weight="700" font-size="44" fill="#FFFFFF">in Tulsa.</text>
+<text x="540" y="845" text-anchor="middle" class="sans" font-weight="500" font-size="34" fill="#FFFFFF" opacity="0.78">In a city where the median</text>
+<text x="540" y="893" text-anchor="middle" class="sans" font-weight="500" font-size="34" fill="#FFFFFF" opacity="0.78">home is $213,000.</text>
+<line x1="280" y1="980" x2="800" y2="980" stroke="#E8604C" stroke-width="3"/>
+<text x="540" y="1060" text-anchor="middle" class="sans" font-weight="600" font-size="30" fill="#FFFFFF">The cohousing movement is now</text>
+<text x="540" y="1100" text-anchor="middle" class="sans" font-weight="600" font-size="30" fill="#FFFFFF">retrofitting existing homes.</text>
+<text x="540" y="1160" text-anchor="middle" class="sans" font-weight="700" font-size="30" fill="#E8604C">We have been doing the same.</text>
+<text x="540" y="1230" text-anchor="middle" class="sans" font-weight="400" font-size="20" fill="#FFFFFF" opacity="0.5">Source: Shelterforce, March 2026</text>
+<g>
+<text x="440" y="1310" class="display" font-size="41" fill="#E8604C" letter-spacing="-0.02em">re</text>
+<text x="478" y="1310" class="display" font-size="41" fill="#FFFFFF" letter-spacing="-0.02em">Space</text>
+</g>
+
+</svg>

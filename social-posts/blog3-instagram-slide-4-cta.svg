@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+<defs>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700;800;900&amp;display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&amp;display=swap');
+.display { font-family: 'Clash Display', Inter, 'Helvetica Neue', 'Arial Black', Arial, sans-serif; font-weight: 700; }
+.sans { font-family: 'DM Sans', Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1080" height="1350" fill="#F5EFE6"/>
+
+<text x="540" y="490" text-anchor="middle" class="display" font-size="130" fill="#1A1A2E" letter-spacing="-0.02em">Stop renting</text>
+<text x="540" y="630" text-anchor="middle" class="display" font-size="130" fill="#E8604C" letter-spacing="-0.02em">your life.</text>
+<line x1="380" y1="690" x2="700" y2="690" stroke="#1A1A2E" stroke-width="3"/>
+<text x="540" y="790" text-anchor="middle" class="sans" font-weight="500" font-size="36" fill="#1A1A2E">Suites at The Leschi Collection</text>
+<text x="540" y="848" text-anchor="middle" class="sans" font-weight="700" font-size="54" fill="#E8604C">from $124,500</text>
+<rect x="240" y="950" width="600" height="120" rx="8" fill="#E8604C"/>
+<text x="540" y="1028" text-anchor="middle" class="sans" font-weight="700" font-size="38" fill="#FFFFFF">Link in bio · respace.co</text>
+<text x="540" y="1140" text-anchor="middle" class="sans" font-weight="600" font-size="32" fill="#1A1A2E" opacity="0.78">(206) 222-6322</text>
+
+</svg>

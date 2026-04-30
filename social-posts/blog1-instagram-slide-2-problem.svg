@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+<defs>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700;800;900&amp;display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&amp;display=swap');
+.display { font-family: 'Clash Display', Inter, 'Helvetica Neue', 'Arial Black', Arial, sans-serif; font-weight: 700; }
+.sans { font-family: 'DM Sans', Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1080" height="1350" fill="#F5EFE6"/>
+
+<text x="80" y="220" class="sans" font-weight="600" font-size="30" fill="#E8604C" letter-spacing="0.18em">THE PROBLEM</text>
+<text x="80" y="430" class="display" font-size="100" fill="#1A1A2E" letter-spacing="-0.02em">The math used</text>
+<text x="80" y="540" class="display" font-size="100" fill="#1A1A2E" letter-spacing="-0.02em">to be</text>
+<text x="80" y="650" class="display" font-size="100" fill="#E8604C" letter-spacing="-0.02em">impossible.</text>
+<line x1="80" y1="730" x2="260" y2="730" stroke="#E8604C" stroke-width="4"/>
+<text x="80" y="830" class="sans" font-weight="500" font-size="38" fill="#1A1A2E">$1.175M median home in Seattle.</text>
+<text x="80" y="890" class="sans" font-weight="500" font-size="38" fill="#1A1A2E">Average rent $2,395.</text>
+<text x="80" y="950" class="sans" font-weight="500" font-size="38" fill="#1A1A2E">Wage growth almost flat.</text>
+<text x="80" y="1080" class="sans" font-weight="700" font-size="38" fill="#1A1A2E">The gap kept getting wider.</text>
+
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" width="1080" height="1350">
+<defs>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600;700;800;900&amp;display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&amp;display=swap');
+.display { font-family: 'Clash Display', Inter, 'Helvetica Neue', 'Arial Black', Arial, sans-serif; font-weight: 700; }
+.sans { font-family: 'DM Sans', Inter, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+</style>
+</defs>
+<rect width="1080" height="1350" fill="#F5EFE6"/>
+
+<text x="80" y="220" class="sans" font-weight="600" font-size="30" fill="#E8604C" letter-spacing="0.18em">THE NUMBER</text>
+<text x="540" y="640" text-anchor="middle" class="display" font-size="260" fill="#E8604C" letter-spacing="-0.04em">$124,500</text>
+<line x1="380" y1="710" x2="700" y2="710" stroke="#1A1A2E" stroke-width="3"/>
+<text x="540" y="810" text-anchor="middle" class="sans" font-weight="700" font-size="42" fill="#1A1A2E">Starting suite price at</text>
+<text x="540" y="865" text-anchor="middle" class="sans" font-weight="700" font-size="42" fill="#1A1A2E">The Leschi Collection.</text>
+<text x="540" y="985" text-anchor="middle" class="sans" font-weight="500" font-size="32" fill="#1A1A2E" opacity="0.78">Monthly all-in cost from $2,430.</text>
+<text x="540" y="1030" text-anchor="middle" class="sans" font-weight="500" font-size="32" fill="#1A1A2E" opacity="0.78">Comparable to renting a one bedroom.</text>
+<text x="540" y="1140" text-anchor="middle" class="sans" font-weight="700" font-size="38" fill="#E8604C">Equity, yours.</text>
+
+</svg>
