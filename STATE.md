@@ -1,4 +1,4 @@
-# respace-content-portal — STATE
+# respace-content-portal: STATE
 
 Canonical state file for this project. Every session reads this first and updates it last (see CLAUDE.md). Kept in sync across Cowork and Claude Code because it lives in the shared filesystem.
 

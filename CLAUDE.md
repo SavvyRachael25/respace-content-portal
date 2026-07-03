@@ -1,4 +1,4 @@
-# CLAUDE.md — respace-content-portal
+# CLAUDE.md: respace-content-portal
 
 Savvy sync protocol. Any Claude, on any surface (Cowork or Claude Code) and in any new session, follows this so work never fragments between sessions.
 
